@@ -4,7 +4,7 @@ const ScrollOfDeconstruction = () => {
     return (
         <>
             <div style={{ marginTop: '64px' }}>
-                <h4>This will be a blog page</h4>
+                <h4>This will be a blog pageqwereq</h4>
             </div>
         </>
     )
