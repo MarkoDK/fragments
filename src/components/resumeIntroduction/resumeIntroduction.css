@@ -1,0 +1,14 @@
+.container {
+    background-image: url('BackgroundTest.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center 50%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden; 
+    margin: 0;
+    padding: 0; 
+}
