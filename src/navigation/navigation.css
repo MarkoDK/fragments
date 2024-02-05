@@ -1,0 +1,13 @@
+.navigation {
+    position: absolute; /* Ensure navigation stays in place */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    background-color: #333; /* Adjust as needed */
+    z-index: 2; /* Ensure navigation stays above content */
+}
+
+.navigation .MuiButton-root:hover {
+    color: #ffffff !important;
+}

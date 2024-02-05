@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.blog-container {
+  margin-top: 64px; /* Add space for navigation */
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  font-family: 'Roboto', sans-serif;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  min-height: calc(100vh - 64px); /* Adjust to accommodate navigation */
+  background-color: #15171e;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  position: relative; /* Set relative positioning */
+}
+.blog-content {
+  color: #d9dadb;
+  margin-top: 10px !important;
+  font-family: 'Roboto', sans-serif;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left; /* Align text to the left */
+  background-color: #23252b;
+  overflow: auto;
+  word-wrap: break-word; /* Allow text to wrap */
+  max-width: 900px; /* Adjust the value as needed */
+  margin: 0 auto; /* Center the container horizontally */
+  position: relative; /* Set relative positioning */
+  z-index: 1; /* Ensure content stays above navigation */
+  
 }
 
-.App-link {
-  color: #61dafb;
+.inner-border {
+  margin-top: 2px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title-container {
+  text-align: center; /* Center align title */
+  max-width: 100%; /* Match the width of the images */
+  margin: 0 auto;
+  margin-bottom: 2px;
+  
+  font-style: italic;
+}
+
+
+.img-size {
+  max-width: 100%; /* Allow the image to expand within its container */
+  width: 100%; /* Ensure the image takes up the full width of its container */
+  max-height: 500px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px; /* Adjust as needed */
+  margin: 0 auto; /* Center the container horizontally */
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.text-container {
+  max-width: 100%; /* Match the width of the images */
+  margin: 0 auto; /* Center the container horizontally */
+  margin-left: 10px;
 }
