@@ -3,7 +3,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Typography, Paper, Grid } from '@material-ui/core';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import backgroundImage from './BackgroundTest.jpg';
-
+import surroundingsCover from './SurroundingsCover.png';
+import backgroundStars from './BackgroundStars.jpg';
 // #d9dadb - font siva
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -11,6 +12,8 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2),
     textAlign: 'center',
     marginTop: "64px",
+    backgroundImage: `url(${backgroundStars})`, // Applying the background image
+    backgroundSize: 'cover',
   },
   postContainer: {
     cursor: 'pointer',
@@ -89,7 +92,7 @@ const posts = [
     title: "Surroundings - My 2024 Game's Jam video game",
     content: "- The theme of Game's Jam 2024 was 'Make me laugh'. While this theme is typically associated with comedy, we opted for a different approach, aiming to convey a message about mental health.",
     path: '/SurroundingsBlog', // Specify the path for the second post
-    image: backgroundImage,
+    image: surroundingsCover,
   },
   {
     id: 3,
@@ -174,7 +177,7 @@ const BlogPage = () => {
   const classes = useStyles();
 
   return (
-    <div className={classes.root} style={{ minHeight: "calc(100vh - 96px)", backgroundColor: "#15171e"}}>
+    <div className={classes.root} style={{ minHeight: "calc(100vh - 96px)"}}>
       <Grid container spacing={3}>
         {posts.map((post) => (
           <Grid key={post.id} item xs={12} sm={6} md={4} lg={4}> {/* Modified here */}

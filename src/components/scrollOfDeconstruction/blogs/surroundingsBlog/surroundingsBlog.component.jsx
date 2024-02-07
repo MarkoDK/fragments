@@ -3,6 +3,8 @@ import firstImage from './Surroundings1stPic.png';
 import secondImage from './SurroundingsSecondPic.png'
 import thirdImage from './SurroundingsThirdPic.png'
 import fourthImage from './SurroundingsFourthPic.png'
+import surroundingsMessage from './SurroundingsMessage.png'
+import fifthImage from './SurroundingsFifthPic.png'
 import './../../../../App.css'
 
 const MemeClashBlog = () => {
@@ -15,7 +17,7 @@ const MemeClashBlog = () => {
                 </div>
             <div className='inner-border'>
             <div className="text-container">
-                <h2>1. Introduction</h2>
+                <h2 style={{ color: "#fff" }}>1. Introduction</h2>
                     <p>- Back in around 2007-2008, while I was watching my first ever Blizzcon, 
                         where developers and designers presented games in front of an eager audience, I harbored a dream: one day, 
                         I would be able to do something similar. Recently, upon hearing about the Games Jam, I made the decision to participate, 
@@ -25,8 +27,8 @@ const MemeClashBlog = () => {
                         we experienced an incredible interaction with the audience. It was reminiscent of that dream I had years ago about announcing a game, 
                         and I felt a small part of it come true.</p>
                     <p>In this article, I will detail the game we presented, "<strong>Surroundings</strong>"</p>
-                    <h2>2. About the game</h2>
-                    <p>I always had this ideology that if I were to create even a prototype of a game, such as in this scenario, I would like it to potentially have a full release. 
+                    <h2 style={{ color: "#fff" }}>2. About the game</h2>
+                    <p>- I always had this ideology that if I were to create even a prototype of a game, such as in this scenario, I would like it to potentially have a full release. 
                         This is why I opted for a level-progression type of game. </p>
                         <p>When developing this game, my entire focus was not on merely eliciting laughter from the audience. 
                             Rather, the overarching objective of the game itself was to bring joy to someone in-game, specifically depressed individuals, to improve their mental health
@@ -56,7 +58,8 @@ const MemeClashBlog = () => {
                     </p>
                 </div>
                 <div className="image-container">
-                    <img src={secondImage} alt="Meme Image" className='img-size' />
+                    <img src={secondImage} alt="Meme Image" className='two-images-size' />
+                    <img src={fourthImage} alt="Meme Image" className='two-images-size' />
                 </div>
                 <p>
                 After completing the first objective, the second objective is revealed, and so forth. Alcohol, 
@@ -74,15 +77,39 @@ const MemeClashBlog = () => {
                 <p>
                 Please dont mind the pink color, that was a result of a 48h Game's Jam Deadline!
                 </p>
-                <div className="image-container">
-                    <img src={fourthImage} alt="Meme Image" title="First room after objectives" className='img-size' />
-                </div>
+                <p>
                 Next on the list is hygiene, and this is where as a Ghost you are supposed to go near the bathhub and turn on the water.
                 This will draw human's attention and he will come to the bathroom!
+                </p>
                 <div className="image-container">
-                    <img src={thirdImage} alt="Meme Image" className='img-size' />
+                    <img src={thirdImage} alt="Meme Image" className='two-images-size' />
+                    <img src={fifthImage} alt="Meme Image" className='two-images-size' />
                 </div>
-                <p></p>
+                <p>As isolation is one of the main symptoms of depression, I had this idea in mind that one objective for the Ghost should be to
+                    remind a human to check his phone. While the human is taking a bath, a player can move the Ghost to the kitchen and trigger an alarm to grab human's attention.
+                </p>
+                <p>As soon as human checks his phone, the game shows the player a message the human received: a coffee invitation from a coworker. This brightens up the mood
+                    of the human significantly.
+                </p>
+                <p>
+                    The final step would be to put some music on and after that is done, the human grabs his coat and leaves his house, venturing to Level 2.
+                </p>
+                <div className="image-container">
+                    
+                    <img src={surroundingsMessage} alt="Meme Image" className='img-size' />
+                </div>
+                <h2 style={{ color: "#fff" }}>3. Conclusion</h2>
+                <p>
+                    - To be fair, I was a bit nervous about the whole idea, especially considering it wasn't comedy. However, as soon as we started presenting, the audience did
+                    a fantastic job following and interacting with us.
+                </p>
+                <p>
+                    On my little suprise, even after the presentation and the day after, I received a few messages from people in Games Jam discord who unfortunately found themselves in our human.
+                    I wasn't sure how to feel about that; I was very glad the game had the impact I wanted it to have, but on the other hand, it's not so awesome to hear someone struggling.
+                </p>
+                <p>
+                    Overall, working in a team to meet a deadline was so much fun, and I can't wait for the next similar opportunity. Ubisoft's game jam, perhaps?
+                </p>
                 </div>
             </div>
         </div>

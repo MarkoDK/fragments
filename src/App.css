@@ -1,3 +1,4 @@
+
 .blog-container {
   margin-top: 64px; /* Add space for navigation */
   display: flex;
@@ -5,26 +6,40 @@
   justify-content: center;
   align-items: center;
   min-height: calc(100vh - 64px); /* Adjust to accommodate navigation */
-  background-color: #15171e;
+  background-image: url('../src/components/scrollOfDeconstruction/blogs/surroundingsBlog/BackgroundStars.jpg'); /* Relative path to the image */
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
   position: relative; /* Set relative positioning */
 }
 .blog-content {
-  color: #d9dadb;
+  color: #b8bcc1;
   margin-top: 10px !important;
   font-family: 'Roboto', sans-serif;
   border: 2px solid black;
   border-radius: 10px;
   padding: 20px;
-  text-align: left; /* Align text to the left */
+  text-align: left;
   background-color: #23252b;
   overflow: auto;
-  word-wrap: break-word; /* Allow text to wrap */
-  max-width: 900px; /* Adjust the value as needed */
-  margin: 0 auto; /* Center the container horizontally */
-  position: relative; /* Set relative positioning */
-  z-index: 1; /* Ensure content stays above navigation */
-  
+  word-wrap: break-word;
+  max-width: 85%; /* Default to 80% max width */
+
+  /* Center the container horizontally */
+  margin: 0 auto;
+
+  /* Set relative positioning */
+  position: relative;
+
+  /* Ensure content stays above navigation */
+  z-index: 1;
+
+  /* Use media query to adjust max-width based on screen size */
+  @media (min-width: 975px) {
+    max-width: 900px; /* Change max width to 900px for larger screens */
+  }
 }
 
 .inner-border {
@@ -38,7 +53,7 @@
   max-width: 100%; /* Match the width of the images */
   margin: 0 auto;
   margin-bottom: 2px;
-  
+  color: white;
   font-style: italic;
 }
 
@@ -47,6 +62,11 @@
   max-width: 100%; /* Allow the image to expand within its container */
   width: 100%; /* Ensure the image takes up the full width of its container */
   max-height: 500px;
+}
+.two-images-size {
+  max-width: 50%;
+  width: 50%;
+  max-height: 250px;
 }
 
 .image-container {
