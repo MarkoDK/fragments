@@ -1,4 +1,11 @@
 
+@font-face {
+  font-family: 'HollandTitleATRegular';
+  src: url('./fonts/Holland\ Title\ AT\ Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .blog-container {
   margin-top: 64px; /* Add space for navigation */
   display: flex;
@@ -25,7 +32,7 @@
   background-color: #23252b;
   overflow: auto;
   word-wrap: break-word;
-  max-width: 85%; /* Default to 80% max width */
+  max-width: 80%; /* Default to 80% max width */
 
   /* Center the container horizontally */
   margin: 0 auto;
@@ -38,7 +45,7 @@
 
   /* Use media query to adjust max-width based on screen size */
   @media (min-width: 975px) {
-    max-width: 900px; /* Change max width to 900px for larger screens */
+    max-width: 800px; /* Change max width to 900px for larger screens */
   }
 }
 
@@ -68,6 +75,11 @@
   width: 50%;
   max-height: 250px;
 }
+.img-size-700 {
+  max-width: 100%; /* Allow the image to expand within its container */
+  width: 100%; /* Ensure the image takes up the full width of its container */
+  max-height: 700px;
+}
 
 .image-container {
   display: flex;
@@ -83,4 +95,301 @@
   max-width: 100%; /* Match the width of the images */
   margin: 0 auto; /* Center the container horizontally */
   margin-left: 10px;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Adjust the gap between images */
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 10px; /* Adjust the gap between columns */
+}
+
+.column {
+  flex: 1;
+  max-width: 400px; /* Adjust the maximum width of each column */
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-grid {
+  display: flex;
+  flex-direction: column; /* By default, display images in a column */
+  align-items: center;
+}
+
+.image-grid .row {
+  display: flex;
+  flex-direction: column; /* Ensure rows stay horizontal by default */
+  width: 100%;
+}
+
+.image-grid .column {
+  flex: 1;
+  margin-bottom: 15px;
+}
+
+.image-grid .image {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 769px) {
+  .image-grid {
+    flex-direction: row; /* Change to row layout on screens wider than 768px */
+  }
+
+  .image-grid .row {
+    flex-direction: row; /* Ensure images display in a row on larger screens */
+  }
+
+  .image-grid .column {
+    flex: 1;
+    margin-right: 15px; /* Add spacing between columns */
+    margin-bottom: 0; /* Remove bottom margin to align images horizontally */
+  }
+}
+
+
+.dota-hero-container {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.hero-header {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  flex-wrap: wrap; /* Allow items to wrap to next line if needed */
+  flex-direction: row; /* Arrange items in a row */
+  margin-bottom: 20px;
+  box-shadow: 1px 0px 16px #0000009e;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.hero-image {
+  width: 150px; /* Adjust as needed */
+  max-width: 100%; /* Ensure image scales down as necessary */
+  height: auto;
+  margin-right: 20px;
+  box-shadow: 0 4px 8px rgb(0 0 0);
+  border-radius: 5px; /* Optional: add rounded corners */
+}
+
+@media (max-width: 768px) { /* Adjust max-width as per your design */
+  .hero-image {
+    width: 100px; /* Set width to 100px on smaller screens */
+    margin-right: 10px; /* Adjust margin for spacing */
+    margin-left: 10px; /* Adjust margin for spacing */
+  }
+
+  .hero-header {
+    justify-content: center; /* Center items horizontally */
+  }
+}
+.hero-text {
+  flex: 1; /* Allow text to expand to fill remaining space */
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+.hero-name {
+  margin: 0;
+  font-size: 32px;
+  color: #f5f5f5;
+  font-family: 'HollandTitleATRegular', sans-serif;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+.hero-description {
+  color: #b0b0b0;
+  font-family: 'Holland Title Regular';
+  font-size: 16px;
+    color: #8b989e;
+    margin: 0;
+}
+
+.hero-ability-name {
+  font-size: 26px;
+    font-weight: 300;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+    font-family: 'HollandTitleATRegular', sans-serif;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.hero-abilities {
+  box-shadow: 0px 12px 16px #00000054;
+  background-color: #2a2a2a;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #1C3143, #1C314300);
+}
+
+.ability {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.ability-icon {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+  filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.5));
+  border-radius: 20px;
+  border: 2px solid black;
+}
+
+.ability-text {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Holland Title Regular'
+}
+
+.ability-name {
+  margin: 0;
+  font-size: 18px;
+  color: white;
+  font-size: 21px;
+  font-weight: 300;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: 'HollandTitleATRegular', sans-serif;
+}
+
+.ability-description {
+  margin: 0;
+  color: #b0b0b0;
+}
+
+.ability-description {
+  font-size: 16px;
+  color: #8b989e;
+  margin: 0; /* Reset margin for precise control */
+}
+
+
+.hero-ultimate {
+  background: linear-gradient(to right, #2d0b30, rgba(74, 20, 140, 0.7)); /* Gradient background */
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.ultimate-container {
+  box-shadow: 0px 12px 16px #00000054;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  background: linear-gradient(to right, #791515, #4A2040); /* Semi-transparent dark purple container */
+  width: 100%; /* Ensure full width */
+}
+
+.left-column {
+  display: flex;
+  align-items: flex-start; /* Align items to the top in left column */
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.ultimate-name {
+  margin: 0;
+  font-size: 18px;
+  color: white;
+  font-size: 21px;
+  font-weight: 300;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: 'HollandTitleATRegular', sans-serif;
+}
+
+.ultimate-icon {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.5));
+  border-radius: 20px;
+  border: 2px solid black;
+}
+
+.ultimate-text {
+  font-size: 21px;
+  font-weight: 300;
+  color: #8b989e;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: 'HollandTitleATRegular', sans-serif;
+  margin: 0; /* Reset margin for precise control */
+}
+
+.right-column {
+  width: 100%; /* Ensure right column takes full width */
+}
+
+.ultimate-background-color-mix {
+  padding: 15px;
+  background: #090d0fa8; /* Semi-transparent overlay */
+}
+
+.ultimate-ability-name {
+  font-size: 26px;
+  font-weight: 300;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: 'HollandTitleATRegular', sans-serif;
+  text-align: center;
+    margin-bottom: 0px;
+    margin-top: 15px;
+}
+
+.ultimate-description {
+  font-size: 16px;
+  color: #8b989e;
+  margin: 0; /* Reset margin for precise control */
+}
+
+.ability-description {
+  font-size: 16px;
+  color: #8b989e;
+  margin: 0; /* Reset margin for precise control */
+}
+
+.rank-gold {
+  color: #FFCC00;
+  font-weight: 800;
+}
+
+.cooldown-blue {
+  color: #358cddc0;
+  font-weight: 800;
 }

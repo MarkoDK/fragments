@@ -5,6 +5,11 @@ import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import backgroundImage from './BackgroundTest.jpg';
 import surroundingsCover from './SurroundingsCover.png';
 import backgroundStars from './BackgroundStars.jpg';
+import bloodborneCover from './BloodborneCover.jpg'
+import nordeusChallenge from './nordeusChallenge.png'
+import memeClashBackground from './BoardAvatarCards.jpg'
+
+
 // #d9dadb - font siva
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -82,9 +87,9 @@ const useStyles = makeStyles((theme) => ({
 const posts = [
   {
     id: 1,
-    title: 'Meme Clash - attention seeker of the Belgrade game jam',
-    content: '- Back in 2008, teamed up with my brother and his friend, we made a Dota 1 Clone with 36 Unique Heroes. This grabbed Icefrogs attention and we got in the contact with him.',
-    path: '/MemeClashBlog', // Specify the path for the first post
+    title: 'The Final Battle - My personal Dota clone made back in 2008-2010',
+    content: '- Back in 2008, teamed up with my brother, we made a Dota 1 Clone with 36 Unique Heroes. This grabbed Icefrogs attention and we got in the contact with him.',
+    path: '/FinalBattle', // Specify the path for the first post
     image: backgroundImage,
   },
   {
@@ -96,17 +101,17 @@ const posts = [
   },
   {
     id: 3,
-    title: 'Why I love Diablo 2 Itemization so much',
+    title: 'Squad Busters - Full deconstruction',
     content: 'Opis drugog',
     path: '/second-post', // Specify the path for the second post
     image: backgroundImage,
   },
   {
     id: 4,
-    title: 'My Fantasy-Card-Boardgame that was fun in playtesting',
-    content: 'Opis drugog',
-    path: '/second-post', // Specify the path for the second post
-    image: backgroundImage,
+    title: 'Bloodborne – The Evolution of Souls Combat',
+    content: "- In this article, I will attempt to explain why I believe Bloodborne is FromSoftware's most important title by analyzing game design choices used and how it paved the way for FromSoftware's future games",
+    path: '/Bloodborne', // Specify the path for the second post
+    image: bloodborneCover,
   },
   {
     id: 5,
@@ -131,10 +136,10 @@ const posts = [
   },
   {
     id: 8,
-    title: 'The Final Battle - My personal Dota clone from 2008',
-    content: 'Opis drugog',
-    path: '/second-post', // Specify the path for the second post
-    image: backgroundImage,
+    title: 'Meme Clash - Attention seeker of 2024 Belgrade Game Jam',
+    content: 'Check out this article if you want to learn more about our overwhelmingly positively received board game from Belgrade GJ 2024. Even today, we still meet up and play this board game from time to time!',
+    path: '/MemeClashBlog', // Specify the path for the second post
+    image: memeClashBackground,
   },
   {
     id: 9,
@@ -152,24 +157,24 @@ const posts = [
   },
   {
     id: 11,
-    title: 'Dark Souls/Bloodbrone - Sparked my love for single player games',
+    title: 'My Fantasy-Card-Boardgame that was fun in playtesting',
     content: 'Opis drugog',
     path: '/second-post', // Specify the path for the second post
     image: backgroundImage,
   },
   {
     id: 12,
-    title: 'Competitive System in a video game - Nordeus Challenge',
-    content: 'Opis drugog',
-    path: '/second-post', // Specify the path for the second post
-    image: backgroundImage,
+    title: 'Nordeus Game Design Challenge 2023',
+    content: 'Theme for this challenge was "Competitive System in a video game". This article managed to earn me a very valuable mentoring session at Nordeus.',
+    path: '/NordeusChallenge', // Specify the path for the second post
+    image: nordeusChallenge,
   },
   {
     id: 13,
-    title: 'Competitive System in a video game - Nordeus Challenge',
-    content: 'Opis drugog',
-    path: '/second-post', // Specify the path for the second post
-    image: backgroundImage,
+    title: 'Nordeus Game Design Challenge 2023',
+    content: 'Theme for this challenge was "Competitive System in a video game". This article managed to earn me a very valuable mentoring session at Nordeus.',
+    path: '/NordeusChallenge', // Specify the path for the second post
+    image: nordeusChallenge,
   },
 ];
 
