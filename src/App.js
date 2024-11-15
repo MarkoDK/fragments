@@ -17,7 +17,7 @@ const App = () => {
             <Router>
             <NavigationBar />
             <Routes>
-                <Route path="/CvIntroduction" element={<ResumeIntroduction />} />
+                <Route path="/" element={<ResumeIntroduction />} />
                 <Route path="/VideoGame" element={<VideoGame />} />
                 <Route path="/ScrollOfDeconstruction" element={<ScrollOfDeconstruction />}/>
                 <Route path="/MemeClashBlog" element={<MemeClashBlog />}/>

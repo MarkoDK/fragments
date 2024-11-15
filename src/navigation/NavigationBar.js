@@ -19,7 +19,7 @@ const NavigationBar = () => {
         };
 
         window.addEventListener('resize', handleResize);
-        handleResize(); // Call once to set initial font size and color
+        handleResize(); 
 
         return () => window.removeEventListener('resize', handleResize);
     }, []);
