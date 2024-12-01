@@ -8,6 +8,7 @@ import backgroundStars from './BackgroundStars.jpg';
 import bloodborneCover from './BloodborneCover.jpg'
 import nordeusChallenge from './nordeusChallenge.png'
 import memeClashBackground from './BoardAvatarCards.jpg'
+import rngArticleImg from "./RNGarticleImg.jpg"
 
 
 // #d9dadb - font siva
@@ -87,8 +88,8 @@ const useStyles = makeStyles((theme) => ({
 const posts = [
   {
     id: 1,
-    title: 'The Final Battle - My personal Dota clone made back in 2008-2010',
-    content: '- Back in 2008, teamed up with my brother, we made a Dota 1 Clone with 36 Unique Heroes. This grabbed Icefrogs attention and we got in the contact with him.',
+    title: 'The Final Battle - My personal MOBA (DOTA clone) made back in 2010 with 36 Unique Hero designs!',
+    content: '- Back in 2010, teamed up with my brother, using WC3 editor, we made a Dota 1 Clone with 36 Unique Heroes. This grabbed Icefrogs attention and we got in the contact with him.',
     path: '/FinalBattle', // Specify the path for the first post
     image: backgroundImage,
   },
@@ -109,7 +110,7 @@ const posts = [
   {
     id: 4,
     title: 'Bloodborne – The Evolution of Souls Combat',
-    content: "- In this article, I will attempt to explain why I believe Bloodborne is FromSoftware's most important title by analyzing game design choices used and how it paved the way for FromSoftware's future games",
+    content: "- In this article, I will attempt to explain why I believe Bloodborne is FromSoftware's most important title by analyzing game design choices used and how it paved the way for FromSoftware's future games.",
     path: '/Bloodborne', // Specify the path for the second post
     image: bloodborneCover,
   },
@@ -171,10 +172,10 @@ const posts = [
   },
   {
     id: 13,
-    title: 'Nordeus Game Design Challenge 2023',
-    content: 'Theme for this challenge was "Competitive System in a video game". This article managed to earn me a very valuable mentoring session at Nordeus.',
-    path: '/NordeusChallenge', // Specify the path for the second post
-    image: nordeusChallenge,
+    title: 'Controlling RNG in Video Games',
+    content: 'RNG in video games is a very important and complex subject. In this article, I tend to cover basics of RNG & how certain games used very smart systems to implement it.',
+    path: '/RNGinGameDesign',
+    image: rngArticleImg,
   },
 ];
 

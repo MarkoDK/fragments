@@ -9,6 +9,7 @@ import SurroundingsBlog from './components/scrollOfDeconstruction/blogs/surround
 import BloodborneBlog from './components/scrollOfDeconstruction/blogs/bloodborneBlog/bloodborneBlog.component';
 import NordeusChallenge from './components/scrollOfDeconstruction/blogs/nordeusChallengeBlog/nordeusChallenge.component'
 import FinalBattleBlog from './components/scrollOfDeconstruction/blogs/finalBattleBlog/finalBattle.component';
+import RNGinGameDesign from './components/scrollOfDeconstruction/articles/RNG-game-design/RNGinGameDesign.component';
 
 
 const App = () => {
@@ -25,6 +26,7 @@ const App = () => {
                 <Route path="/Bloodborne" element={<BloodborneBlog />}/>
                 <Route path="/NordeusChallenge" element={<NordeusChallenge />}/>
                 <Route path="/FinalBattle" element={<FinalBattleBlog />}/>
+                <Route path="/RNGinGameDesign" element={<RNGinGameDesign />}/>
             </Routes>
 
             </Router>

@@ -108,7 +108,7 @@ const MemeClashBlog = () => {
                     I wasn't sure how to feel about that; I was very glad the game had the impact I wanted it to have, but on the other hand, it's not so awesome to hear someone struggling.
                 </p>
                 <p>
-                    Overall, working in a team to meet a deadline was so much fun, and I can't wait for the next similar opportunity. Ubisoft's game jam, perhaps?
+                    Overall, working in a team to meet a deadline was so much fun, and I can't wait for the next similar opportunity.
                 </p>
                 </div>
             </div>

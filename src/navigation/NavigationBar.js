@@ -29,7 +29,7 @@ const NavigationBar = () => {
             <Toolbar>
                 <Typography variant="h6" style={{ fontSize: textSize, color: '#ffffff', fontWeight: 'bold' }} >Marko Veljkovic CV</Typography>
                 <Box sx={{ display: 'flex', justifyContent: 'center', width: '84%', color: '#c2c2ba', fontWeight: 'bold' }}>
-                    <Button color="inherit" component={Link} to="/CvIntroduction" style={{ fontSize }}>CV Introduction</Button>
+                    <Button color="inherit" component={Link} to="/" style={{ fontSize }}>CV Introduction</Button>
                     <Button color="inherit" component={Link} to="/VideoGame" style={{ fontSize }}>Video Game</Button>
                     <Button color="inherit" component={Link} to="/ScrollOfDeconstruction" style={{ fontSize }}>Scroll of Deconstruction</Button>
                 </Box>
