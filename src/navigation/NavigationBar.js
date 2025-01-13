@@ -33,6 +33,7 @@ const NavigationBar = () => {
                     <Button color="inherit" component={Link} to="/VideoGame" style={{ fontSize }}>Video Game</Button>
                     <Button color="inherit" component={Link} to="/ScrollOfDeconstruction" style={{ fontSize }}>Scroll of Deconstruction</Button>
                 </Box>
+                <Typography variant="h6" style={{ fontSize: textSize, color: '#ffffff', fontWeight: 'bold' }} >markoveljkovic11010@gmail.com</Typography>
             </Toolbar>
         </AppBar>
     );
