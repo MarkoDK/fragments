@@ -12,7 +12,7 @@ const VideoGame = () => {
     padding: "10px",
     minHeight: "100vh",   // ✅ fills at least screen height, grows with content
     boxSizing: "border-box",
-
+    paddingTop: "70px",
     backgroundImage: `url(${BackgroundStars})`,
     backgroundSize: "cover",        // stretch background
     backgroundPosition: "center",
@@ -35,7 +35,7 @@ const VideoGame = () => {
               justifyContent: "center",
               backgroundColor: "#23252b",
               marginBottom: "5px",
-              marginTop: "30px",
+              marginTop: "30px !important",
               height: "50px",
             }}
           >
@@ -61,7 +61,7 @@ const VideoGame = () => {
           </div>
           <iframe
             width="100%"
-            height="800px"
+            height="750px"
             src="https://www.youtube.com/embed/j5wuqTrRqVU"
             title="Gameplay Video"
             frameBorder="0"
