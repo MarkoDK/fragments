@@ -4,21 +4,21 @@ import BackgroundStars from "../scrollOfDeconstruction/blogList/BackgroundStars.
 const VideoGame = () => {
   return (
     <>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          padding: "10px",
-          height: "100vh",
-          boxSizing: "border-box",
+    <div
+  style={{
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    padding: "10px",
+    minHeight: "100vh",   // ✅ fills at least screen height, grows with content
+    boxSizing: "border-box",
 
-       backgroundImage: `url(${BackgroundStars})`,
-backgroundSize: "100% auto",
-backgroundPosition: "top center",
-backgroundRepeat: "repeat-y",
-        }}
-      >
+    backgroundImage: `url(${BackgroundStars})`,
+    backgroundSize: "cover",        // stretch background
+    backgroundPosition: "center",
+    backgroundRepeat: "repeat-y",   // ✅ repeat vertically
+  }}
+>
         <div
           style={{
             width: "75%",
