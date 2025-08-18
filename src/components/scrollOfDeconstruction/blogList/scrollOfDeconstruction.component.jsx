@@ -1,6 +1,6 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import { Typography, Paper, Grid } from '@material-ui/core';
+import { Typography, Paper, Grid } from '@mui/material';
+import { makeStyles } from '@mui/styles';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import backgroundImage from './BackgroundTest.jpg';
 import surroundingsCover from './SurroundingsCover.png';
