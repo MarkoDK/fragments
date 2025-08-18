@@ -4,8 +4,8 @@ import { AppBar, Toolbar, Typography, Button, Box } from '@mui/material';
 import './navigation.css';
 
 const NavigationBar = () => {
-    const [fontSize, setFontSize] = useState('1rem');
-    const [textSize, setTextSize] = useState('1rem');
+    const [fontSize, setFontSize] = useState('14px');
+    const [textSize, setTextSize] = useState('14px');
 
     useEffect(() => {
         const handleResize = () => {
@@ -13,8 +13,8 @@ const NavigationBar = () => {
                 setFontSize('0.7rem');
                 setTextSize('0.7rem');
             } else {
-                setFontSize('1rem');
-                setTextSize('1rem');
+                setFontSize('14px');
+                setTextSize('14px');
             }
         };
 
