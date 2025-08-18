@@ -13,10 +13,10 @@ const VideoGame = () => {
           height: "100vh",
           boxSizing: "border-box",
 
-          backgroundImage: `url(${BackgroundStars})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
+       backgroundImage: `url(${BackgroundStars})`,
+backgroundSize: "100% auto",
+backgroundPosition: "top center",
+backgroundRepeat: "repeat-y",
         }}
       >
         <div
@@ -35,7 +35,7 @@ const VideoGame = () => {
               justifyContent: "center",
               backgroundColor: "#23252b",
               marginBottom: "5px",
-              marginTop: "10px",
+              marginTop: "30px",
               height: "50px",
             }}
           >
