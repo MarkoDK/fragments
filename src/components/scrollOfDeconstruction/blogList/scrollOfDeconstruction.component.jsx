@@ -64,7 +64,7 @@ const ContentContainer = styled('div')({
 });
 
 const Title = styled(Typography)({
-  fontSize: '15px',
+  fontSize: '14px',
   marginBottom: '4px',
   fontWeight: 'bold',
   fontFamily: "'Roboto', sans-serif",
