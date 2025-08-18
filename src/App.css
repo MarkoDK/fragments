@@ -400,3 +400,57 @@
   color: #358cddc0;
   font-weight: 800;
 }
+
+.intro-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 75%;
+    min-height: 75vh;
+    margin: 80px auto;
+    padding: 30px 40px;
+    background: rgba(20, 20, 30, 0.7); /* semi-transparent for blending */
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+    color: #f5f5f5;
+    font-family: 'Segoe UI', sans-serif;
+     overflow-y: auto;
+}
+
+.intro-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #ffcc66;
+    text-shadow: 0 0 10px rgba(255, 204, 102, 0.8);
+}
+
+.intro-subtitle {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #a8d8ff;
+    text-shadow: 0 0 6px rgba(168, 216, 255, 0.7);
+}
+
+.intro-text {
+  text-align: left;   /* always aligned left */
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.yt-link {
+  color: #ffcc66;;
+  font-weight: 600;
+  text-decoration: none;  /* remove underline */
+  transition: all 0.3s ease;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.yt-link:hover {
+  color: #ff5555; /* brighter red */
+  text-shadow: 0 0 8px rgba(255, 50, 50, 0.8); /* glowing hover effect */
+}
+
+

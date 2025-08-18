@@ -20,7 +20,7 @@ const FinalBattleBlog = () => {
         <div className="blog-container">
           <div className="blog-content">
             <div>
-              <h1 className="title-container">Final battle - My personal MOBA from back in 2008</h1>
+              <h1 className="title-container">Final battle - My personal MOBA from back in 2010s</h1>
             </div>
             <div className='inner-border'>
               <div className="dota-hero-container">

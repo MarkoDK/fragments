@@ -10,6 +10,9 @@ import BloodborneBlog from './components/scrollOfDeconstruction/blogs/bloodborne
 import NordeusChallenge from './components/scrollOfDeconstruction/blogs/nordeusChallengeBlog/nordeusChallenge.component'
 import FinalBattleBlog from './components/scrollOfDeconstruction/blogs/finalBattleBlog/finalBattle.component';
 import RNGinGameDesign from './components/scrollOfDeconstruction/articles/RNG-game-design/RNGinGameDesign.component';
+import SeasonControlByMultipliers from './components/scrollOfDeconstruction/articles/SeasonControlByMultipliers/SeasonControlByMultipliers.component';
+import LiveOps from './components/scrollOfDeconstruction/articles/LiveOps/LiveOps.component';
+
 
 
 const App = () => {
@@ -27,6 +30,8 @@ const App = () => {
                 <Route path="/NordeusChallenge" element={<NordeusChallenge />}/>
                 <Route path="/FinalBattle" element={<FinalBattleBlog />}/>
                 <Route path="/RNGinGameDesign" element={<RNGinGameDesign />}/>
+                <Route path="/SeasonControlByMultipliers" element={<SeasonControlByMultipliers />}/>
+                <Route path="/LiveOps" element={<LiveOps />}/>
             </Routes>
 
             </Router>

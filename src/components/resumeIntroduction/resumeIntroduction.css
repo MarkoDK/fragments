@@ -1,14 +1,14 @@
 .container {
-    background-image: url('BackgroundTest.jpg'); 
-    background-size: cover; 
-    background-repeat: no-repeat;
-    background-position: center 50%;
+background-image: url('BackgroundTest.jpg'); 
+  background-size: auto;       /* keep original image size */
+  background-repeat: repeat;   /* tile horizontally + vertically */
+  background-position: top left; 
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    overflow: hidden; 
+    /* overflow: hidden;  */
     margin: 0;
     padding: 0; 
 }

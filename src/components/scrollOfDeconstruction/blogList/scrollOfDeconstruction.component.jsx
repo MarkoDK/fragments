@@ -9,6 +9,8 @@ import bloodborneCover from './BloodborneCover.jpg'
 import nordeusChallenge from './nordeusChallenge.png'
 import memeClashBackground from './BoardAvatarCards.jpg'
 import rngArticleImg from "./RNGarticleImg.jpg"
+import BoostersImg from "./BoostersImg.png"
+import LiveOps from "./LiveOps.png"
 
 
 // #d9dadb - font siva
@@ -116,17 +118,17 @@ const posts = [
   },
   {
     id: 5,
-    title: 'Top 11 - My dream game mode as a very competitive player',
-    content: 'Opis drugog',
-    path: '/second-post', // Specify the path for the second post
-    image: backgroundImage,
+    title: 'How to Engage Players with Low Amount of Real Time to Play Your Game and Have Fun',
+    content: 'In free-to-play (F2P) and live-service games, many players only have a few minutes a day to play. Energy multipliers and time-friendly systems make those short sessions rewarding by condensing progress, boosting rewards, and offering flexible ways to engage.',
+    path: '/SeasonControlByMultipliers', // Specify the path for the second post
+    image: BoostersImg,
   },
   {
     id: 6,
-    title: 'Marvel snap - Guide/Deconstruction thoughts',
-    content: 'Opis drugog',
-    path: '/second-post', // Specify the path for the second post
-    image: backgroundImage,
+    title: 'Popular Live Ops Systems That Keep Games Alive and Players Engaged',
+    content: 'Live Ops systems drive long-term engagement through offers, seasonal updates, events, and social features. These mechanics not only keep gameplay fresh and exciting but also create powerful opportunities for monetization and community growth.',
+    path: '/LiveOps', // Specify the path for the second post
+    image: LiveOps,
   },
   {
     id: 7,
