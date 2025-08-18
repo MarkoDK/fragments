@@ -17,19 +17,19 @@ import RNGinGameDesign from "./components/scrollOfDeconstruction/articles/RNG-ga
 import SeasonControlByMultipliers from "./components/scrollOfDeconstruction/articles/SeasonControlByMultipliers/SeasonControlByMultipliers.component";
 import LiveOps from "./components/scrollOfDeconstruction/articles/LiveOps/LiveOps.component";
 
-// 🎨 Global theme (lock sizes in px)
+
 const theme = createTheme({
   typography: {
     fontFamily: "'Roboto', sans-serif",
-    fontSize: 14, // default for body1 (px)
+    fontSize: 14,
     h1: { fontSize: "32px", fontWeight: 700 },
     h2: { fontSize: "28px", fontWeight: 600 },
     h3: { fontSize: "24px", fontWeight: 600 },
     h4: { fontSize: "20px", fontWeight: 500 },
-    h5: { fontSize: "14px", fontWeight: 500 },
-    h6: { fontSize: "14px", fontWeight: 500 },
-    body1: { fontSize: "14px" },
-    body2: { fontSize: "14px" },
+    h5: { fontSize: "13px", fontWeight: 500 },
+    h6: { fontSize: "13px", fontWeight: 500 },
+    body1: { fontSize: "13px" },
+    body2: { fontSize: "13px" },
     subtitle1: { fontSize: "13px" },
     subtitle2: { fontSize: "11px" },
     button: { fontSize: "14px", textTransform: "none" },

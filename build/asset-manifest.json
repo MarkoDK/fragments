@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.cdcc354c.css",
-    "main.js": "/static/js/main.51c00d1a.js",
+    "main.js": "/static/js/main.1073eb40.js",
     "static/js/787.afa5fa9c.chunk.js": "/static/js/787.afa5fa9c.chunk.js",
     "static/media/JudgmentCollege4.jpg": "/static/media/JudgmentCollege4.3bd287c7995c41293713.jpg",
     "static/media/MemeClashBoard.png": "/static/media/MemeClashBoard.45bb7e00d409efd4f000.png",
@@ -34,11 +34,11 @@
     "static/media/Konrad2.png": "/static/media/Konrad2.30ff50448e31266a4467.png",
     "index.html": "/index.html",
     "main.cdcc354c.css.map": "/static/css/main.cdcc354c.css.map",
-    "main.51c00d1a.js.map": "/static/js/main.51c00d1a.js.map",
+    "main.1073eb40.js.map": "/static/js/main.1073eb40.js.map",
     "787.afa5fa9c.chunk.js.map": "/static/js/787.afa5fa9c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cdcc354c.css",
-    "static/js/main.51c00d1a.js"
+    "static/js/main.1073eb40.js"
   ]
 }
