@@ -10,7 +10,17 @@ const ResumeIntroduction = () => {
           Explanation of idea and how does it work
         </h3>
         <p className="intro-text">
-          Inspired by your short video game where you, Nordeus, explained the
+          Inspired by your short Interview process video game (Youtube link:   <a
+            href="https://www.youtube.com/watch?v=sxqMr_n2LnQ"
+            className="yt-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ marginLeft: "0px !important", marginRight: "0px !important"}}
+          >
+            https://www.youtube.com/watch?v=sxqMr_n2LnQ
+          </a> )
+          
+          where you, Nordeus, explained the
           whole process of interview steps with it, I decided to try to do
           something similar by myself. I wanted to showcase my experience with
           Game Design through a video game. In order to access the full

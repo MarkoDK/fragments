@@ -30,7 +30,7 @@ const NavigationBar = () => {
                 <Typography variant="h6" style={{ fontSize: textSize, color: '#ffffff', fontWeight: 'bold', minWidth: "175px" }} >Marko Veljkovic CV</Typography>
                 <Box sx={{ display: 'flex',  justifyContent: 'flex-start', width: '84%', color: '#c2c2ba', fontWeight: 'bold', marginLeft: "20px" }}>
                     <Button color="inherit" component={Link} to="/" style={{ fontSize  }}> <span style={{ borderLeft: "1px solid #fff", paddingLeft: "10px" }}>
-    Tutorial
+    CV Introduction
   </span></Button>
                     <Button color="inherit" component={Link} to="/VideoGame" style={{ fontSize }}>Video Game</Button>
                     <Button color="inherit" component={Link} to="/ScrollOfDeconstruction" style={{ fontSize }}>Scroll of Deconstruction</Button>
