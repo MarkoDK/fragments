@@ -20,10 +20,172 @@ const FinalBattleBlog = () => {
       <div className="blog-content">
         <div>
           <h1 className="title-container">
-            Preview of some Hero Designs in Final battle - My personal MOBA from back in 2010s
+            Preview of some Hero Designs in Final battle - My personal MOBA from
+            back in 2010s
           </h1>
         </div>
         <div className="inner-border">
+           <div className="dota-hero-container">
+            <div className="hero-header">
+              <img
+                src={images["TeclisModel.png"]}
+                alt="Teclis"
+                className="hero-image"
+              />
+              <div className="hero-text">
+                <h1 className="hero-name">TECLIS – GUARDIAN OF THE LIGHT</h1>
+                <p className="hero-description">
+                  A master of divine magic, Teclis stands as the eternal
+                  Guardian of the Light. With his powers of restoration and holy
+                  blessings, he protects allies and ensures their survival.
+                  Through his healing penance, fortifying prayers, passive light
+                  empowerment, and the ultimate celestial shield, Teclis
+                  embodies the unwavering force of divine protection.
+                </p>
+              </div>
+            </div>
+
+            <div className="hero-abilities">
+              <h2 className="hero-ability-name">ABILITIES</h2>
+
+              {/* Ability 1 */}
+              <div className="ability">
+                <img
+                  src={images["Teclis1.png"]}
+                  alt="Ability 1"
+                  className="ability-icon"
+                />
+                <div className="ability-text">
+                  <h3 className="ability-name">Penance</h3>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Teclis channels
+                    divine energies, healing a friendly target each second.
+                    Channeling stops early if the target reaches full health.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Healing:{" "}
+                    <span className="rank-gold">
+                      25 / 50 / 75 / 100 per second
+                    </span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Duration:{" "}
+                    <span className="rank-gold">2 / 3 / 4 / 5 seconds</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Cooldown: 11</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">
+                      Mana Cost: 110 / 125 / 140 / 155
+                    </span>
+                  </p>
+                </div>
+              </div>
+
+              {/* Ability 2 */}
+              <div className="ability">
+                <img
+                  src={images["Teclis2.png"]}
+                  alt="Ability 2"
+                  className="ability-icon"
+                />
+                <div className="ability-text">
+                  <h3 className="ability-name">Prayer of Fortitude</h3>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Blesses an ally with
+                    divine light, increasing their maximum health for 25
+                    seconds.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Bonus HP:{" "}
+                    <span className="rank-gold">100 / 200 / 300 / 400</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Duration:{" "}
+                    <span className="rank-gold">25 seconds</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Cooldown: 15</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">
+                      Mana Cost: 80 / 90 / 100 / 110
+                    </span>
+                  </p>
+                </div>
+              </div>
+
+              {/* Ability 3 */}
+              <div className="ability">
+                <img
+                  src={images["Teclis3.png"]}
+                  alt="Ability 3"
+                  className="ability-icon"
+                />
+                <div className="ability-text">
+                  <h3 className="ability-name">Guardian Light</h3>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Passively increases
+                    Teclis' intelligence. Additionally, allied units under
+                    Guardian Light are healed each time they cast a spell.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Intelligence Bonus:{" "}
+                    <span className="rank-gold">+4 / +8 / +12 / +16</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Healing:{" "}
+                    <span className="rank-gold">
+                      Equal to double the caster’s Intelligence
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Ultimate */}
+            <div className="ultimate-container">
+              <h2 className="ultimate-ability-name">ULTIMATE</h2>
+              <div className="left-column">
+                <img
+                  src={images["TeclisUlti.png"]}
+                  alt="Ultimate Ability"
+                  className="ultimate-icon"
+                />
+                <div className="text-container">
+                  <h3 className="ultimate-name">Celestial Shield</h3>
+                </div>
+              </div>
+              <div className="right-column">
+                <div className="ultimate-background-color-mix">
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Teclis summons a
+                    shield of divine light, granting 90% damage reduction to an
+                    ally for a short duration.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Duration:{" "}
+                    <span className="rank-gold">4 / 6 / 8 seconds</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Cooldown: 70</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">
+                      Mana Cost: 100 / 150 / 200
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="dota-hero-container">
             <div className="hero-header">
               <img
@@ -409,621 +571,1700 @@ const FinalBattleBlog = () => {
               </div>
             </div>
           </div>
-            <div className="dota-hero-container">
-  <div className="hero-header">
-    <img src={images['KhajiitModel.png']} alt="Khajiit" className="hero-image" />
-    <div className="hero-text">
-      <h1 className="hero-name">KHAJIIT - TIGERIAN SLICER</h1>
-      <p className="hero-description">
-        Born under the silver moon, Khajiit is a Tigerian warrior whose agility and ferocity strike fear into his foes. 
-        Harnessing the essence of the moon, he burns mana, leaps across the battlefield, and unleashes deadly combos that overwhelm even the strongest of enemies. 
-        When he enters his frenzied assault, no foe escapes his claws.
-      </p>
-    </div>
-  </div>
+          <div className="dota-hero-container">
+            <div className="hero-header">
+              <img
+                src={images["KhajiitModel.png"]}
+                alt="Khajiit"
+                className="hero-image"
+              />
+              <div className="hero-text">
+                <h1 className="hero-name">KHAJIIT - TIGERIAN SLICER</h1>
+                <p className="hero-description">
+                  Born under the silver moon, Khajiit is a Tigerian warrior
+                  whose agility and ferocity strike fear into his foes.
+                  Harnessing the essence of the moon, he burns mana, leaps
+                  across the battlefield, and unleashes deadly combos that
+                  overwhelm even the strongest of enemies. When he enters his
+                  frenzied assault, no foe escapes his claws.
+                </p>
+              </div>
+            </div>
 
-  <div className="hero-abilities">
-    <h2 className="hero-ability-name">ABILITIES</h2>
+            <div className="hero-abilities">
+              <h2 className="hero-ability-name">ABILITIES</h2>
 
-    {/* Ability 1 */}
-    <div className="ability">
-      <img src={images['Khajiit1.png']} alt="Ability 1" className="ability-icon" />
-      <div className="ability-text">
-        <h3 className="ability-name">Mana Burn</h3>
-        <p className="ability-description">
-          <span className="bullet-point">•</span> Sends a bolt of negative energy that burns the target’s mana. 
-          Burned mana combusts, dealing equal damage to the target.
-        </p>
-        <p className="ability-description">
-          <span className="bullet-point">•</span> Burns <span className="rank-gold">65/130/195/260</span> mana.
-        </p>
-        <p className="ability-description">
-          <span className="bullet-point">•</span> <span className="cooldown-blue">Cooldown: 7</span>
-        </p>
-        <p className="ability-description">
-          <span className="bullet-point">•</span> <span className="cooldown-blue">Mana Cost: 60/80/100/120</span>
-        </p>
-      </div>
-    </div>
+              {/* Ability 1 */}
+              <div className="ability">
+                <img
+                  src={images["Khajiit1.png"]}
+                  alt="Ability 1"
+                  className="ability-icon"
+                />
+                <div className="ability-text">
+                  <h3 className="ability-name">Mana Burn</h3>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Sends a bolt of
+                    negative energy that burns the target’s mana. Burned mana
+                    combusts, dealing equal damage to the target.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Burns{" "}
+                    <span className="rank-gold">65/130/195/260</span> mana.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Cooldown: 7</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">
+                      Mana Cost: 60/80/100/120
+                    </span>
+                  </p>
+                </div>
+              </div>
 
-    {/* Ability 2 */}
-    <div className="ability">
-      <img src={images['Khajiit2.png']} alt="Ability 2" className="ability-icon" />
-      <div className="ability-text">
-        <h3 className="ability-name">Leap</h3>
-        <p className="ability-description">
-          <span className="bullet-point">•</span> Khajiit leaps to a target point, striking enemies upon impact for 
-          <span className="rank-gold">200</span> damage.
-        </p>
-        <p className="ability-description">
-          <span className="bullet-point">•</span> Leap range: 
-          <span className="rank-gold">400/600/800/1000</span>.
-        </p>
-        <p className="ability-description">
-          <span className="bullet-point">•</span> <span className="cooldown-blue">Cooldown: 20</span>
-        </p>
-        <p className="ability-description">
-          <span className="bullet-point">•</span> <span className="cooldown-blue">Mana Cost: 100</span>
-        </p>
-      </div>
-    </div>
+              {/* Ability 2 */}
+              <div className="ability">
+                <img
+                  src={images["Khajiit2.png"]}
+                  alt="Ability 2"
+                  className="ability-icon"
+                />
+                <div className="ability-text">
+                  <h3 className="ability-name">Leap</h3>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Khajiit leaps to a
+                    target point, striking enemies upon impact for
+                    <span className="rank-gold">200</span> damage.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Leap range:
+                    <span className="rank-gold">400/600/800/1000</span>.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Cooldown: 20</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Mana Cost: 100</span>
+                  </p>
+                </div>
+              </div>
 
-    {/* Ability 3 */}
-    <div className="ability">
-      <img src={images['Khajiit3.png']} alt="Ability 3" className="ability-icon" />
-      <div className="ability-text">
-        <h3 className="ability-name">Moon Strike</h3>
-        <p className="ability-description">
-          <span className="bullet-point">•</span> Khajiit’s attacks have a 20% chance to call upon the power of the moon, 
-          dealing bonus magical damage and briefly stunning the target.
-        </p>
-        <p className="ability-description">
-          <span className="bullet-point">•</span> Bonus damage: 
-          <span className="rank-gold">60/120/180/240</span>.
-        </p>
-        <p className="ability-description">
-          <span className="bullet-point">•</span> <span className="cooldown-blue">Passive</span>
-        </p>
-      </div>
-    </div>
-  </div>
+              {/* Ability 3 */}
+              <div className="ability">
+                <img
+                  src={images["Khajiit3.png"]}
+                  alt="Ability 3"
+                  className="ability-icon"
+                />
+                <div className="ability-text">
+                  <h3 className="ability-name">Moon Strike</h3>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Khajiit’s attacks
+                    have a 20% chance to call upon the power of the moon,
+                    dealing bonus magical damage and briefly stunning the
+                    target.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Bonus damage:
+                    <span className="rank-gold">60/120/180/240</span>.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Passive</span>
+                  </p>
+                </div>
+              </div>
+            </div>
 
-  {/* Ultimate */}
-  <div className="ultimate-container">
-    <h2 className="ultimate-ability-name">ULTIMATE</h2>
-    <div className="left-column">
-      <img src={images['KhajiitUlti.png']} alt="Ultimate Ability" className="ultimate-icon" />
-      <div className="text-container">
-        <h3 className="ultimate-name">Tigerian Assault</h3>
-      </div>
-    </div>
-    <div className="right-column">
-      <div className="ultimate-background-color-mix">
-        <p className="ability-description">
-          <span className="bullet-point">•</span> Khajiit enters a feral frenzy, slicing through his enemies in a flurry of attacks. 
-          He strikes <span className="rank-gold">4/6/8</span> times, rapidly slashing multiple targets.
-        </p>
-        <p className="ability-description">
-          <span className="bullet-point">•</span> <span className="cooldown-blue">Cooldown: 90</span>
-        </p>
-        <p className="ability-description">
-          <span className="bullet-point">•</span> <span className="cooldown-blue">Mana Cost: 100/150/200</span>
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-     <div className="dota-hero-container">
-  <div className="hero-header">
-    <img src={images['VoldoModel.png']} alt="Voldo" className="hero-image" />
-    <div className="hero-text">
-      <h1 className="hero-name">VOLDO - VOIDCRAWLER</h1>
-      <p className="hero-description">
-        Emerging from the abyss between realities, Voldo is a phantom assassin who manipulates the void to
-        confuse, torment, and destroy his enemies. With every strike, he tears rifts in space, spawning illusions 
-        of himself to overwhelm his prey. Few can withstand his relentless assault, and fewer still can escape
-        once he vanishes into the shadows of the void.
-      </p>
-    </div>
-  </div>
+            {/* Ultimate */}
+            <div className="ultimate-container">
+              <h2 className="ultimate-ability-name">ULTIMATE</h2>
+              <div className="left-column">
+                <img
+                  src={images["KhajiitUlti.png"]}
+                  alt="Ultimate Ability"
+                  className="ultimate-icon"
+                />
+                <div className="text-container">
+                  <h3 className="ultimate-name">Tigerian Assault</h3>
+                </div>
+              </div>
+              <div className="right-column">
+                <div className="ultimate-background-color-mix">
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Khajiit enters a
+                    feral frenzy, slicing through his enemies in a flurry of
+                    attacks. He strikes <span className="rank-gold">4/6/8</span>{" "}
+                    times, rapidly slashing multiple targets.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Cooldown: 90</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">
+                      Mana Cost: 100/150/200
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="dota-hero-container">
+            <div className="hero-header">
+              <img
+                src={images["VoldoModel.png"]}
+                alt="Voldo"
+                className="hero-image"
+              />
+              <div className="hero-text">
+                <h1 className="hero-name">VOLDO - VOIDCRAWLER</h1>
+                <p className="hero-description">
+                  Emerging from the abyss between realities, Voldo is a phantom
+                  assassin who manipulates the void to confuse, torment, and
+                  destroy his enemies. With every strike, he tears rifts in
+                  space, spawning illusions of himself to overwhelm his prey.
+                  Few can withstand his relentless assault, and fewer still can
+                  escape once he vanishes into the shadows of the void.
+                </p>
+              </div>
+            </div>
 
-  <div className="hero-abilities">
-    <h2 className="hero-ability-name">ABILITIES</h2>
+            <div className="hero-abilities">
+              <h2 className="hero-ability-name">ABILITIES</h2>
 
-    {/* Ability 1 */}
-    <div className="ability">
-      <img src={images['Voldo1.png']} alt="Ability 1" className="ability-icon" />
-      <div className="ability-text">
-        <h3 className="ability-name">Faceless Macabre</h3>
-        <p className="ability-description">
-          <span className="bullet-point">•</span> Voldo lashes out with his twin katars, 
-          dealing <span className="rank-gold">80/160/240/320 + Agility</span> damage and mini-stunning the target.
-        </p>
-        <p className="ability-description"><span className="bullet-point">•</span> <span className="cooldown-blue">Cooldown: 11</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> <span className="cooldown-blue">Mana Cost: 80/100/120/140</span></p>
-      </div>
-    </div>
+              {/* Ability 1 */}
+              <div className="ability">
+                <img
+                  src={images["Voldo1.png"]}
+                  alt="Ability 1"
+                  className="ability-icon"
+                />
+                <div className="ability-text">
+                  <h3 className="ability-name">Faceless Macabre</h3>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Voldo lashes out
+                    with his twin katars, dealing{" "}
+                    <span className="rank-gold">80/160/240/320 + Agility</span>{" "}
+                    damage and mini-stunning the target.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Cooldown: 11</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">
+                      Mana Cost: 80/100/120/140
+                    </span>
+                  </p>
+                </div>
+              </div>
 
-    {/* Ability 2 */}
-    <div className="ability">
-      <img src={images['Voldo2.png']} alt="Ability 2" className="ability-icon" />
-      <div className="ability-text">
-        <h3 className="ability-name">Riftwalk</h3>
-        <p className="ability-description">
-          <span className="bullet-point">•</span> On attack, Voldo has a chance to phase through the void and 
-          reappear behind his target, dealing AoE damage within 250 radius. Works on illusions.
-        </p>
-        <p className="ability-description"><span className="bullet-point">•</span> Chance: <span className="rank-gold">5%/10%/15%/20%</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> AoE Damage: <span className="rank-gold">40/80/120/160</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> <span className="cooldown-blue">Passive</span></p>
-      </div>
-    </div>
+              {/* Ability 2 */}
+              <div className="ability">
+                <img
+                  src={images["Voldo2.png"]}
+                  alt="Ability 2"
+                  className="ability-icon"
+                />
+                <div className="ability-text">
+                  <h3 className="ability-name">Riftwalk</h3>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> On attack, Voldo has
+                    a chance to phase through the void and reappear behind his
+                    target, dealing AoE damage within 250 radius. Works on
+                    illusions.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Chance:{" "}
+                    <span className="rank-gold">5%/10%/15%/20%</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> AoE Damage:{" "}
+                    <span className="rank-gold">40/80/120/160</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Passive</span>
+                  </p>
+                </div>
+              </div>
 
-    {/* Ability 3 */}
-    <div className="ability">
-      <img src={images['Voldo3.png']} alt="Ability 3" className="ability-icon" />
-      <div className="ability-text">
-        <h3 className="ability-name">Voidweaver</h3>
-        <p className="ability-description">
-          <span className="bullet-point">•</span> Harnessing void energy, Voldo has a 20% chance on attack to 
-          summon an illusion of himself that lasts 7 seconds.
-        </p>
-        <p className="ability-description"><span className="bullet-point">•</span> Illusion deals <span className="rank-gold">5%/10%/15%/20%</span> of Voldo’s damage.</p>
-        <p className="ability-description"><span className="bullet-point">•</span> <span className="cooldown-blue">Passive</span></p>
-      </div>
-    </div>
-  </div>
+              {/* Ability 3 */}
+              <div className="ability">
+                <img
+                  src={images["Voldo3.png"]}
+                  alt="Ability 3"
+                  className="ability-icon"
+                />
+                <div className="ability-text">
+                  <h3 className="ability-name">Voidweaver</h3>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Harnessing void
+                    energy, Voldo has a 20% chance on attack to summon an
+                    illusion of himself that lasts 7 seconds.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Illusion deals{" "}
+                    <span className="rank-gold">5%/10%/15%/20%</span> of Voldo’s
+                    damage.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Passive</span>
+                  </p>
+                </div>
+              </div>
+            </div>
 
-  {/* Ultimate */}
-  <div className="ultimate-container">
-    <h2 className="ultimate-ability-name">ULTIMATE</h2>
-    <div className="left-column">
-      <img src={images['VoldoUlti.png']} alt="Ultimate Ability" className="ultimate-icon" />
-      <div className="text-container">
-        <h3 className="ultimate-name">Asylum Breakout</h3>
-      </div>
-    </div>
-    <div className="right-column">
-      <div className="ultimate-background-color-mix">
-        <p className="ability-description">
-          <span className="bullet-point">•</span> Voldo becomes one with the void, slipping into invisibility every 3 seconds. 
-          Each time he vanishes, he leaves behind an illusion lasting 7 seconds that deals 20% of his total damage.
-        </p>
-        <p className="ability-description"><span className="bullet-point">•</span> Turns invisible <span className="rank-gold">3/4/5</span> times per cast.</p>
-        <p className="ability-description"><span className="bullet-point">•</span> <span className="cooldown-blue">Cooldown: 60</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> <span className="cooldown-blue">Mana Cost: 125/150/175</span></p>
-      </div>
-    </div>
-  </div>
-</div>
-<div className="dota-hero-container">
-  <div className="hero-header">
-    <img src={images['CadorModel.png']} alt="Cador" className="hero-image" />
-    <div className="hero-text">
-      <h1 className="hero-name">CADOR - DEATH KNIGHT</h1>
-      <p className="hero-description">
-        Once a noble paladin, Cador fell to the corruption of the Runeblade, becoming a Death Knight bound to Blood, Plague, and Frost. 
-        Harnessing unholy powers, he strikes fear and despair into all who stand before him, cutting down his foes with relentless precision. 
-        His mastery of the three runes makes him a versatile warrior capable of crippling, rotting, and freezing his enemies before finishing them with his ultimate strike.
-      </p>
-    </div>
-  </div>
+            {/* Ultimate */}
+            <div className="ultimate-container">
+              <h2 className="ultimate-ability-name">ULTIMATE</h2>
+              <div className="left-column">
+                <img
+                  src={images["VoldoUlti.png"]}
+                  alt="Ultimate Ability"
+                  className="ultimate-icon"
+                />
+                <div className="text-container">
+                  <h3 className="ultimate-name">Asylum Breakout</h3>
+                </div>
+              </div>
+              <div className="right-column">
+                <div className="ultimate-background-color-mix">
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Voldo becomes one
+                    with the void, slipping into invisibility every 3 seconds.
+                    Each time he vanishes, he leaves behind an illusion lasting
+                    7 seconds that deals 20% of his total damage.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Turns invisible{" "}
+                    <span className="rank-gold">3/4/5</span> times per cast.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Cooldown: 60</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">
+                      Mana Cost: 125/150/175
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="dota-hero-container">
+            <div className="hero-header">
+              <img
+                src={images["CadorModel.png"]}
+                alt="Cador"
+                className="hero-image"
+              />
+              <div className="hero-text">
+                <h1 className="hero-name">CADOR - DEATH KNIGHT</h1>
+                <p className="hero-description">
+                  Once a noble paladin, Cador fell to the corruption of the
+                  Runeblade, becoming a Death Knight bound to Blood, Plague, and
+                  Frost. Harnessing unholy powers, he strikes fear and despair
+                  into all who stand before him, cutting down his foes with
+                  relentless precision. His mastery of the three runes makes him
+                  a versatile warrior capable of crippling, rotting, and
+                  freezing his enemies before finishing them with his ultimate
+                  strike.
+                </p>
+              </div>
+            </div>
 
-  <div className="hero-abilities">
-    <h2 className="hero-ability-name">ABILITIES</h2>
+            <div className="hero-abilities">
+              <h2 className="hero-ability-name">ABILITIES</h2>
 
-    {/* Ability 1 */}
-    <div className="ability">
-      <img src={images['Cador1.png']} alt="Blood Strike" className="ability-icon" />
-      <div className="ability-text">
-        <h3 className="ability-name">Blood Strike (Q)</h3>
-        <p className="ability-description"><span className="bullet-point">•</span> Strikes target with runeblade empowered by Blood, dealing damage and reducing their outgoing damage for 6 seconds.</p>
-        <p className="ability-description"><span className="bullet-point">•</span> Damage: <span className="rank-gold">100/150/200/250</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> Damage Reduction: <span className="rank-gold">10%/15%/20%/25%</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> <span className="cooldown-blue">Cooldown: 9</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> <span className="cooldown-blue">Mana Cost: 60/70/80/90</span></p>
-      </div>
-    </div>
+              {/* Ability 1 */}
+              <div className="ability">
+                <img
+                  src={images["Cador1.png"]}
+                  alt="Blood Strike"
+                  className="ability-icon"
+                />
+                <div className="ability-text">
+                  <h3 className="ability-name">Blood Strike (Q)</h3>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Strikes target with
+                    runeblade empowered by Blood, dealing damage and reducing
+                    their outgoing damage for 6 seconds.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Damage:{" "}
+                    <span className="rank-gold">100/150/200/250</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Damage Reduction:{" "}
+                    <span className="rank-gold">10%/15%/20%/25%</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Cooldown: 9</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">
+                      Mana Cost: 60/70/80/90
+                    </span>
+                  </p>
+                </div>
+              </div>
 
-    {/* Ability 2 */}
-    <div className="ability">
-      <img src={images['Cador2.png']} alt="Plague Strike" className="ability-icon" />
-      <div className="ability-text">
-        <h3 className="ability-name">Plague Strike (W)</h3>
-        <p className="ability-description"><span className="bullet-point">•</span> Infuses his blade with plague, dealing initial damage and damage over time for 6 seconds.</p>
-        <p className="ability-description"><span className="bullet-point">•</span> Initial Damage: <span className="rank-gold">60/80/100/120</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> DoT: <span className="rank-gold">10/15/20/25 per second</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> <span className="cooldown-blue">Cooldown: 8</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> <span className="cooldown-blue">Mana Cost: 55/65/75/85</span></p>
-      </div>
-    </div>
+              {/* Ability 2 */}
+              <div className="ability">
+                <img
+                  src={images["Cador2.png"]}
+                  alt="Plague Strike"
+                  className="ability-icon"
+                />
+                <div className="ability-text">
+                  <h3 className="ability-name">Plague Strike (W)</h3>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Infuses his blade
+                    with plague, dealing initial damage and damage over time for
+                    6 seconds.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Initial Damage:{" "}
+                    <span className="rank-gold">60/80/100/120</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> DoT:{" "}
+                    <span className="rank-gold">10/15/20/25 per second</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Cooldown: 8</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">
+                      Mana Cost: 55/65/75/85
+                    </span>
+                  </p>
+                </div>
+              </div>
 
-    {/* Ability 3 */}
-    <div className="ability">
-      <img src={images['Cador3.png']} alt="Frost Strike" className="ability-icon" />
-      <div className="ability-text">
-        <h3 className="ability-name">Frost Strike (E)</h3>
-        <p className="ability-description"><span className="bullet-point">•</span> Cador empowers his blade with frost, slowing enemy movement and attack speed on hit for 3 seconds.</p>
-        <p className="ability-description"><span className="bullet-point">•</span> Movement Slow: <span className="rank-gold">10%/20%/30%/40%</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> Attack Speed Reduction: <span className="rank-gold">5%/10%/15%/20%</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> <span className="cooldown-blue">On-Hit Effect</span></p>
-      </div>
-    </div>
-  </div>
+              {/* Ability 3 */}
+              <div className="ability">
+                <img
+                  src={images["Cador3.png"]}
+                  alt="Frost Strike"
+                  className="ability-icon"
+                />
+                <div className="ability-text">
+                  <h3 className="ability-name">Frost Strike (E)</h3>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Cador empowers his
+                    blade with frost, slowing enemy movement and attack speed on
+                    hit for 3 seconds.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Movement Slow:{" "}
+                    <span className="rank-gold">10%/20%/30%/40%</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Attack Speed
+                    Reduction: <span className="rank-gold">5%/10%/15%/20%</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">On-Hit Effect</span>
+                  </p>
+                </div>
+              </div>
+            </div>
 
-  {/* Ultimate */}
-  <div className="ultimate-container">
-    <h2 className="ultimate-ability-name">ULTIMATE</h2>
-    <div className="left-column">
-      <img src={images['CadorUlti.png']} alt="Rune Strike" className="ultimate-icon" />
-      <div className="text-container">
-        <h3 className="ultimate-name">Rune Strike (R)</h3>
-      </div>
-    </div>
-    <div className="right-column">
-      <div className="ultimate-background-color-mix">
-        <p className="ability-description"><span className="bullet-point">•</span> Unleashes the full power of his Runeblade, dealing base damage and bonus damage for each active rune strike (Blood, Plague, Frost) still on the target. Heals for bonus damage dealt. Stuns for 1 second.</p>
-        <p className="ability-description"><span className="bullet-point">•</span> Base Damage: <span className="rank-gold">100/200/300</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> Bonus Damage per Rune: <span className="rank-gold">50/100/150</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> <span className="cooldown-blue">Cooldown: 30</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> <span className="cooldown-blue">Mana Cost: 100</span></p>
-      </div>
-    </div>
-  </div>
-</div>
-    <div className="dota-hero-container">
-  <div className="hero-header">
-    <img src={images['ThrogrimModel.png']} alt="Throgrim" className="hero-image" />
-    <div className="hero-text">
-      <h1 className="hero-name">THROGRIM - ENGINEER</h1>
-      <p className="hero-description">
-        A master of invention and explosive warfare, Throgrim constructs deadly contraptions that dominate the battlefield. 
-        With cunning precision, he deploys turrets, barricades, and devastating bombs, turning any ground into a fortress. 
-        His expertise in mechanics makes him a relentless defender and an overwhelming force in siege combat.
-      </p>
-    </div>
-  </div>
+            {/* Ultimate */}
+            <div className="ultimate-container">
+              <h2 className="ultimate-ability-name">ULTIMATE</h2>
+              <div className="left-column">
+                <img
+                  src={images["CadorUlti.png"]}
+                  alt="Rune Strike"
+                  className="ultimate-icon"
+                />
+                <div className="text-container">
+                  <h3 className="ultimate-name">Rune Strike (R)</h3>
+                </div>
+              </div>
+              <div className="right-column">
+                <div className="ultimate-background-color-mix">
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Unleashes the full
+                    power of his Runeblade, dealing base damage and bonus damage
+                    for each active rune strike (Blood, Plague, Frost) still on
+                    the target. Heals for bonus damage dealt. Stuns for 1
+                    second.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Base Damage:{" "}
+                    <span className="rank-gold">100/200/300</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Bonus Damage per
+                    Rune: <span className="rank-gold">50/100/150</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Cooldown: 30</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Mana Cost: 100</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="dota-hero-container">
+            <div className="hero-header">
+              <img
+                src={images["ThrogrimModel.png"]}
+                alt="Throgrim"
+                className="hero-image"
+              />
+              <div className="hero-text">
+                <h1 className="hero-name">THROGRIM - ENGINEER</h1>
+                <p className="hero-description">
+                  A master of invention and explosive warfare, Throgrim
+                  constructs deadly contraptions that dominate the battlefield.
+                  With cunning precision, he deploys turrets, barricades, and
+                  devastating bombs, turning any ground into a fortress. His
+                  expertise in mechanics makes him a relentless defender and an
+                  overwhelming force in siege combat.
+                </p>
+              </div>
+            </div>
 
-  <div className="hero-abilities">
-    <h2 className="hero-ability-name">ABILITIES</h2>
+            <div className="hero-abilities">
+              <h2 className="hero-ability-name">ABILITIES</h2>
 
-    {/* Ability 1 */}
-    <div className="ability">
-      <img src={images['Throgrim1.png']} alt="Ability 1" className="ability-icon" />
-      <div className="ability-text">
-        <h3 className="ability-name">Napalm Bomb</h3>
-        <p className="ability-description">
-          <span className="bullet-point">•</span> Throgrim hurls a Napalm Bomb at the target area, stunning enemies for 
-          1 second and scorching the ground. Enemies caught take burning damage over 10 seconds.
-        </p>
-        <p className="ability-description"><span className="bullet-point">•</span> Damage per second: <span className="rank-gold">14/26/38/50</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> Duration: <span className="rank-gold">10 seconds</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> <span className="cooldown-blue">Cooldown: 15</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> <span className="cooldown-blue">Mana Cost: 140</span></p>
-      </div>
-    </div>
+              {/* Ability 1 */}
+              <div className="ability">
+                <img
+                  src={images["Throgrim1.png"]}
+                  alt="Ability 1"
+                  className="ability-icon"
+                />
+                <div className="ability-text">
+                  <h3 className="ability-name">Napalm Bomb</h3>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Throgrim hurls a
+                    Napalm Bomb at the target area, stunning enemies for 1
+                    second and scorching the ground. Enemies caught take burning
+                    damage over 10 seconds.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Damage per second:{" "}
+                    <span className="rank-gold">14/26/38/50</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Duration:{" "}
+                    <span className="rank-gold">10 seconds</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Cooldown: 15</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Mana Cost: 140</span>
+                  </p>
+                </div>
+              </div>
 
-    {/* Ability 2 */}
-    <div className="ability">
-      <img src={images['Throgrim2.png']} alt="Ability 2" className="ability-icon" />
-      <div className="ability-text">
-        <h3 className="ability-name">Setup Turret</h3>
-        <p className="ability-description">
-          <span className="bullet-point">•</span> Deploys a mechanical turret at Throgrim’s position, firing at enemies 
-          every second. A maximum of 5 turrets can exist at a time.
-        </p>
-        <p className="ability-description"><span className="bullet-point">•</span> Turret HP: <span className="rank-gold">75/150/225/300</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> Damage: <span className="rank-gold">9/17/25/33</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> <span className="cooldown-blue">Cooldown: 15</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> <span className="cooldown-blue">Mana Cost: 60</span></p>
-      </div>
-    </div>
+              {/* Ability 2 */}
+              <div className="ability">
+                <img
+                  src={images["Throgrim2.png"]}
+                  alt="Ability 2"
+                  className="ability-icon"
+                />
+                <div className="ability-text">
+                  <h3 className="ability-name">Setup Turret</h3>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Deploys a mechanical
+                    turret at Throgrim’s position, firing at enemies every
+                    second. A maximum of 5 turrets can exist at a time.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Turret HP:{" "}
+                    <span className="rank-gold">75/150/225/300</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Damage:{" "}
+                    <span className="rank-gold">9/17/25/33</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Cooldown: 15</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Mana Cost: 60</span>
+                  </p>
+                </div>
+              </div>
 
-    {/* Ability 3 */}
-    <div className="ability">
-      <img src={images['Throgrim3.png']} alt="Ability 3" className="ability-icon" />
-      <div className="ability-text">
-        <h3 className="ability-name">Barricade</h3>
-        <p className="ability-description">
-          <span className="bullet-point">•</span> Constructs barricades at the target location, each with 500 health 
-          and 5 medium armor, blocking enemy movement. Barricades last 10 seconds.
-        </p>
-        <p className="ability-description"><span className="bullet-point">•</span> Number of Barricades: <span className="rank-gold">3/6/9/12</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> <span className="cooldown-blue">Cooldown: 18</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> <span className="cooldown-blue">Mana Cost: 135</span></p>
-      </div>
-    </div>
-  </div>
+              {/* Ability 3 */}
+              <div className="ability">
+                <img
+                  src={images["Throgrim3.png"]}
+                  alt="Ability 3"
+                  className="ability-icon"
+                />
+                <div className="ability-text">
+                  <h3 className="ability-name">Barricade</h3>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Constructs
+                    barricades at the target location, each with 500 health and
+                    5 medium armor, blocking enemy movement. Barricades last 10
+                    seconds.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Number of
+                    Barricades: <span className="rank-gold">3/6/9/12</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Cooldown: 18</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Mana Cost: 135</span>
+                  </p>
+                </div>
+              </div>
+            </div>
 
-  {/* Ultimate */}
-  <div className="ultimate-container">
-    <h2 className="ultimate-ability-name">ULTIMATE</h2>
-    <div className="left-column">
-      <img src={images['ThrogrimUlti.png']} alt="Ultimate Ability" className="ultimate-icon" />
-      <div className="text-container">
-        <h3 className="ultimate-name">Mine Field</h3>
-      </div>
-    </div>
-    <div className="right-column">
-      <div className="ultimate-background-color-mix">
-        <p className="ability-description">
-          <span className="bullet-point">•</span> Deploys a deadly Mine Field at the target area, spawning Land Mines every 4 seconds. 
-          Mines explode when enemies approach, dealing 200 damage in a 300 AoE.
-        </p>
-        <p className="ability-description"><span className="bullet-point">•</span> Mines: <span className="rank-gold">3/5/7</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> AoE Damage: <span className="rank-gold">200</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> <span className="cooldown-blue">Cooldown: 25</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> <span className="cooldown-blue">Mana Cost: 100/150/200</span></p>
-      </div>
-    </div>
-  </div>
-</div>
-<div className="dota-hero-container">
-  <div className="hero-header">
-    <img src={images['LazarusModel.png']} alt="Lazarus" className="hero-image" />
-    <div className="hero-text">
-      <h1 className="hero-name">LAZARUS – ARCHBISHOP</h1>
-      <p className="hero-description">
-        A divine archbishop who wields both holy and arcane powers to dominate the battlefield. 
-        Lazarus blinds his enemies, petrifies them with curses, and moves freely with teleportation. 
-        His fiery judgment empowers his attacks, burning all who oppose the light.
-      </p>
-    </div>
-  </div>
+            {/* Ultimate */}
+            <div className="ultimate-container">
+              <h2 className="ultimate-ability-name">ULTIMATE</h2>
+              <div className="left-column">
+                <img
+                  src={images["ThrogrimUlti.png"]}
+                  alt="Ultimate Ability"
+                  className="ultimate-icon"
+                />
+                <div className="text-container">
+                  <h3 className="ultimate-name">Mine Field</h3>
+                </div>
+              </div>
+              <div className="right-column">
+                <div className="ultimate-background-color-mix">
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Deploys a deadly
+                    Mine Field at the target area, spawning Land Mines every 4
+                    seconds. Mines explode when enemies approach, dealing 200
+                    damage in a 300 AoE.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Mines:{" "}
+                    <span className="rank-gold">3/5/7</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> AoE Damage:{" "}
+                    <span className="rank-gold">200</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Cooldown: 25</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">
+                      Mana Cost: 100/150/200
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="dota-hero-container">
+            <div className="hero-header">
+              <img
+                src={images["LazarusModel.png"]}
+                alt="Lazarus"
+                className="hero-image"
+              />
+              <div className="hero-text">
+                <h1 className="hero-name">LAZARUS – ARCHBISHOP</h1>
+                <p className="hero-description">
+                  A divine archbishop who wields both holy and arcane powers to
+                  dominate the battlefield. Lazarus blinds his enemies,
+                  petrifies them with curses, and moves freely with
+                  teleportation. His fiery judgment empowers his attacks,
+                  burning all who oppose the light.
+                </p>
+              </div>
+            </div>
 
-  <div className="hero-abilities">
-    <h2 className="hero-ability-name">ABILITIES</h2>
+            <div className="hero-abilities">
+              <h2 className="hero-ability-name">ABILITIES</h2>
 
-    {/* Ability 1 */}
-    <div className="ability">
-      <img src={images['Lazarus1.png']} alt="Ability 1" className="ability-icon" />
-      <div className="ability-text">
-        <h3 className="ability-name">Flash</h3>
-        <p className="ability-description">
-          <span className="bullet-point">•</span> Emits a blinding flash of light, damaging and slowing nearby enemies.
-        </p>
-        <p className="ability-description"><span className="bullet-point">•</span> Damage: <span className="rank-gold">60/120/180/240</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> Slow: <span className="rank-gold">5% / 10% / 15% / 20%</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> <span className="cooldown-blue">Cooldown: 13</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> <span className="cooldown-blue">Mana Cost: 90/110/130/150</span></p>
-      </div>
-    </div>
+              {/* Ability 1 */}
+              <div className="ability">
+                <img
+                  src={images["Lazarus1.png"]}
+                  alt="Ability 1"
+                  className="ability-icon"
+                />
+                <div className="ability-text">
+                  <h3 className="ability-name">Flash</h3>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Emits a blinding
+                    flash of light, damaging and slowing nearby enemies.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Damage:{" "}
+                    <span className="rank-gold">60/120/180/240</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Slow:{" "}
+                    <span className="rank-gold">5% / 10% / 15% / 20%</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Cooldown: 13</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">
+                      Mana Cost: 90/110/130/150
+                    </span>
+                  </p>
+                </div>
+              </div>
 
-    {/* Ability 2 */}
-    <div className="ability">
-      <img src={images['Lazarus2.png']} alt="Ability 2" className="ability-icon" />
-      <div className="ability-text">
-        <h3 className="ability-name">Stone Curse</h3>
-        <p className="ability-description">
-          <span className="bullet-point">•</span> Petrifies the target, disabling them for a short duration.
-        </p>
-        <p className="ability-description"><span className="bullet-point">•</span> Duration: <span className="rank-gold">1 / 1.75 / 2.5 / 3.25 seconds</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> <span className="cooldown-blue">Cooldown: 20</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> <span className="cooldown-blue">Mana Cost: 110/130/150/170</span></p>
-      </div>
-    </div>
+              {/* Ability 2 */}
+              <div className="ability">
+                <img
+                  src={images["Lazarus2.png"]}
+                  alt="Ability 2"
+                  className="ability-icon"
+                />
+                <div className="ability-text">
+                  <h3 className="ability-name">Stone Curse</h3>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Petrifies the
+                    target, disabling them for a short duration.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Duration:{" "}
+                    <span className="rank-gold">
+                      1 / 1.75 / 2.5 / 3.25 seconds
+                    </span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Cooldown: 20</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">
+                      Mana Cost: 110/130/150/170
+                    </span>
+                  </p>
+                </div>
+              </div>
 
-    {/* Ability 3 */}
-    <div className="ability">
-      <img src={images['Lazarus3.png']} alt="Ability 3" className="ability-icon" />
-      <div className="ability-text">
-        <h3 className="ability-name">Teleport</h3>
-        <p className="ability-description">
-          <span className="bullet-point">•</span> Teleports a short distance, allowing Lazarus to move in or out of combat instantly.
-        </p>
-        <p className="ability-description"><span className="bullet-point">•</span> Cooldown: <span className="rank-gold">12 / 9 / 7 / 5 seconds</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> <span className="cooldown-blue">Mana Cost: 60</span></p>
-      </div>
-    </div>
-  </div>
+              {/* Ability 3 */}
+              <div className="ability">
+                <img
+                  src={images["Lazarus3.png"]}
+                  alt="Ability 3"
+                  className="ability-icon"
+                />
+                <div className="ability-text">
+                  <h3 className="ability-name">Teleport</h3>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Teleports a short
+                    distance, allowing Lazarus to move in or out of combat
+                    instantly.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Cooldown:{" "}
+                    <span className="rank-gold">12 / 9 / 7 / 5 seconds</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Mana Cost: 60</span>
+                  </p>
+                </div>
+              </div>
+            </div>
 
-  {/* Ultimate */}
-  <div className="ultimate-container">
-    <h2 className="ultimate-ability-name">ULTIMATE</h2>
-    <div className="left-column">
-      <img src={images['LazarusUlti.png']} alt="Ultimate Ability" className="ultimate-icon" />
-      <div className="text-container">
-        <h3 className="ultimate-name">Fireball</h3>
-      </div>
-    </div>
-    <div className="right-column">
-      <div className="ultimate-background-color-mix">
-        <p className="ability-description">
-          <span className="bullet-point">•</span> On toggle, imbues his attacks with blazing fireballs, dealing bonus damage on hit.
-        </p>
-        <p className="ability-description"><span className="bullet-point">•</span> Bonus Damage: <span className="rank-gold">40 / 80 / 120</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> <span className="cooldown-blue">Cooldown: 0</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> <span className="cooldown-blue">Mana Cost: 25</span></p>
-        <p className="ability-description" style={{ color: 'red' }}>
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
- <div className="dota-hero-container">
-  <div className="hero-header">
-    <img src={images['SiegfriedModel.png']} alt="Siegfried" className="hero-image" />
-    <div className="hero-text">
-      <h1 className="hero-name">SIEGFRIED – PALADIN</h1>
-      <p className="hero-description">
-        A holy knight blessed with divine power, Siegfried protects his allies and smites his enemies 
-        with radiant force. His sacred storm slows foes, his judgment stuns the wicked, and his shield 
-        renders him invulnerable. When invoking Avenging Wrath, he becomes an unstoppable avatar of light, 
-        striking with overwhelming might.
-      </p>
-    </div>
-  </div>
+            {/* Ultimate */}
+            <div className="ultimate-container">
+              <h2 className="ultimate-ability-name">ULTIMATE</h2>
+              <div className="left-column">
+                <img
+                  src={images["LazarusUlti.png"]}
+                  alt="Ultimate Ability"
+                  className="ultimate-icon"
+                />
+                <div className="text-container">
+                  <h3 className="ultimate-name">Fireball</h3>
+                </div>
+              </div>
+              <div className="right-column">
+                <div className="ultimate-background-color-mix">
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> On toggle, imbues
+                    his attacks with blazing fireballs, dealing bonus damage on
+                    hit.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Bonus Damage:{" "}
+                    <span className="rank-gold">40 / 80 / 120</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Cooldown: 0</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Mana Cost: 25</span>
+                  </p>
+                  <p
+                    className="ability-description"
+                    style={{ color: "red" }}
+                  ></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="dota-hero-container">
+            <div className="hero-header">
+              <img
+                src={images["SiegfriedModel.png"]}
+                alt="Siegfried"
+                className="hero-image"
+              />
+              <div className="hero-text">
+                <h1 className="hero-name">SIEGFRIED – PALADIN</h1>
+                <p className="hero-description">
+                  A holy knight blessed with divine power, Siegfried protects
+                  his allies and smites his enemies with radiant force. His
+                  sacred storm slows foes, his judgment stuns the wicked, and
+                  his shield renders him invulnerable. When invoking Avenging
+                  Wrath, he becomes an unstoppable avatar of light, striking
+                  with overwhelming might.
+                </p>
+              </div>
+            </div>
 
-  <div className="hero-abilities">
-    <h2 className="hero-ability-name">ABILITIES</h2>
+            <div className="hero-abilities">
+              <h2 className="hero-ability-name">ABILITIES</h2>
 
-    {/* Ability 1 */}
-    <div className="ability">
-      <img src={images['Siegfried1.png']} alt="Ability 1" className="ability-icon" />
-      <div className="ability-text">
-        <h3 className="ability-name">Divine Storm</h3>
-        <p className="ability-description">
-          <span className="bullet-point">•</span> Siegfried swings his sword infused with holy power, 
-          creating a storm that damages and slows all enemies in a wide area for 4 seconds.
-        </p>
-        <p className="ability-description"><span className="bullet-point">•</span> Damage: <span className="rank-gold">100 / 175 / 250 / 300</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> Slow: <span className="rank-gold">15% / 20% / 25% / 30%</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> <span className="cooldown-blue">Cooldown: 14</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> <span className="cooldown-blue">Mana Cost: 70 / 90 / 110 / 130</span></p>
-      </div>
-    </div>
+              {/* Ability 1 */}
+              <div className="ability">
+                <img
+                  src={images["Siegfried1.png"]}
+                  alt="Ability 1"
+                  className="ability-icon"
+                />
+                <div className="ability-text">
+                  <h3 className="ability-name">Divine Storm</h3>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Siegfried swings his
+                    sword infused with holy power, creating a storm that damages
+                    and slows all enemies in a wide area for 4 seconds.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Damage:{" "}
+                    <span className="rank-gold">100 / 175 / 250 / 300</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Slow:{" "}
+                    <span className="rank-gold">15% / 20% / 25% / 30%</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Cooldown: 14</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">
+                      Mana Cost: 70 / 90 / 110 / 130
+                    </span>
+                  </p>
+                </div>
+              </div>
 
-    {/* Ability 2 */}
-    <div className="ability">
-      <img src={images['Siegfried2.png']} alt="Ability 2" className="ability-icon" />
-      <div className="ability-text">
-        <h3 className="ability-name">Judgement of Light</h3>
-        <p className="ability-description">
-          <span className="bullet-point">•</span> Strikes a target with holy power, dealing multiplied 
-          damage based on Siegfried's Strength. If the target is under Divine Storm’s effect, it is stunned 
-          for 2 seconds.
-        </p>
-        <p className="ability-description"><span className="bullet-point">•</span> Damage: <span className="rank-gold">2x / 3x / 4x / 5x Strength</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> Stun Duration (if affected by Divine Storm): <span className="rank-gold">2 seconds</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> <span className="cooldown-blue">Cooldown: 13</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> <span className="cooldown-blue">Mana Cost: 125</span></p>
-      </div>
-    </div>
+              {/* Ability 2 */}
+              <div className="ability">
+                <img
+                  src={images["Siegfried2.png"]}
+                  alt="Ability 2"
+                  className="ability-icon"
+                />
+                <div className="ability-text">
+                  <h3 className="ability-name">Judgement of Light</h3>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Strikes a target
+                    with holy power, dealing multiplied damage based on
+                    Siegfried's Strength. If the target is under Divine Storm’s
+                    effect, it is stunned for 2 seconds.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Damage:{" "}
+                    <span className="rank-gold">
+                      2x / 3x / 4x / 5x Strength
+                    </span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Stun Duration (if
+                    affected by Divine Storm):{" "}
+                    <span className="rank-gold">2 seconds</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Cooldown: 13</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Mana Cost: 125</span>
+                  </p>
+                </div>
+              </div>
 
-    {/* Ability 3 */}
-    <div className="ability">
-      <img src={images['Siegfried3.png']} alt="Ability 3" className="ability-icon" />
-      <div className="ability-text">
-        <h3 className="ability-name">Divine Shield</h3>
-        <p className="ability-description">
-          <span className="bullet-point">•</span> Siegfried becomes immune to all damage and spells for a 
-          short duration.
-        </p>
-        <p className="ability-description"><span className="bullet-point">•</span> Duration: <span className="rank-gold">1 / 2 / 3 / 4 seconds</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> <span className="cooldown-blue">Cooldown: 20</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> <span className="cooldown-blue">Mana Cost: 125</span></p>
-      </div>
-    </div>
-  </div>
+              {/* Ability 3 */}
+              <div className="ability">
+                <img
+                  src={images["Siegfried3.png"]}
+                  alt="Ability 3"
+                  className="ability-icon"
+                />
+                <div className="ability-text">
+                  <h3 className="ability-name">Divine Shield</h3>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Siegfried becomes
+                    immune to all damage and spells for a short duration.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Duration:{" "}
+                    <span className="rank-gold">1 / 2 / 3 / 4 seconds</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Cooldown: 20</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Mana Cost: 125</span>
+                  </p>
+                </div>
+              </div>
+            </div>
 
-  {/* Ultimate */}
-  <div className="ultimate-container">
-    <h2 className="ultimate-ability-name">ULTIMATE</h2>
-    <div className="left-column">
-      <img src={images['SiegfriedUlti.png']} alt="Ultimate Ability" className="ultimate-icon" />
-      <div className="text-container">
-        <h3 className="ultimate-name">Avenging Wrath</h3>
-      </div>
-    </div>
-    <div className="right-column">
-      <div className="ultimate-background-color-mix">
-        <p className="ability-description">
-          <span className="bullet-point">•</span> Siegfried ascends as the Avatar of Heavens, greatly 
-          increasing his attack damage for 20 seconds.
-        </p>
-        <p className="ability-description"><span className="bullet-point">•</span> Bonus Damage: <span className="rank-gold">100% / 125% / 150%</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> <span className="cooldown-blue">Cooldown: 100</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> <span className="cooldown-blue">Mana Cost: 100 / 150 / 200</span></p>
-      </div>
-    </div>
-  </div>
-</div>
-<div className="dota-hero-container">
-  <div className="hero-header">
-    <img src={images['BrutusModel.png']} alt="Brutus" className="hero-image" />
-    <div className="hero-text">
-      <h1 className="hero-name">BRUTUS – GLADIATOR</h1>
-      <p className="hero-description">
-        A battle-hardened warrior forged in the arenas, Brutus thrives in relentless combat. 
-        With unyielding resilience and brutal strikes, he crushes his enemies with sheer force. 
-        His mastery of boulders, crushing blows, and ensnaring techniques make him a relentless 
-        predator who dominates the battlefield.
-      </p>
-    </div>
-  </div>
+            {/* Ultimate */}
+            <div className="ultimate-container">
+              <h2 className="ultimate-ability-name">ULTIMATE</h2>
+              <div className="left-column">
+                <img
+                  src={images["SiegfriedUlti.png"]}
+                  alt="Ultimate Ability"
+                  className="ultimate-icon"
+                />
+                <div className="text-container">
+                  <h3 className="ultimate-name">Avenging Wrath</h3>
+                </div>
+              </div>
+              <div className="right-column">
+                <div className="ultimate-background-color-mix">
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Siegfried ascends as
+                    the Avatar of Heavens, greatly increasing his attack damage
+                    for 20 seconds.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Bonus Damage:{" "}
+                    <span className="rank-gold">100% / 125% / 150%</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Cooldown: 100</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">
+                      Mana Cost: 100 / 150 / 200
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="dota-hero-container">
+            <div className="hero-header">
+              <img
+                src={images["BrutusModel.png"]}
+                alt="Brutus"
+                className="hero-image"
+              />
+              <div className="hero-text">
+                <h1 className="hero-name">BRUTUS – GLADIATOR</h1>
+                <p className="hero-description">
+                  A battle-hardened warrior forged in the arenas, Brutus thrives
+                  in relentless combat. With unyielding resilience and brutal
+                  strikes, he crushes his enemies with sheer force. His mastery
+                  of boulders, crushing blows, and ensnaring techniques make him
+                  a relentless predator who dominates the battlefield.
+                </p>
+              </div>
+            </div>
 
-  <div className="hero-abilities">
-    <h2 className="hero-ability-name">ABILITIES</h2>
+            <div className="hero-abilities">
+              <h2 className="hero-ability-name">ABILITIES</h2>
 
-    {/* Ability 1 */}
-    <div className="ability">
-      <img src={images['Brutus1.png']} alt="Ability 1" className="ability-icon" />
-      <div className="ability-text">
-        <h3 className="ability-name">Rolling Boulder</h3>
-        <p className="ability-description">
-          <span className="bullet-point">•</span> Hurls a massive boulder that rolls forward, damaging all enemies in its path.
-        </p>
-        <p className="ability-description"><span className="bullet-point">•</span> Damage: <span className="rank-gold">75 / 150 / 225 / 300</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> <span className="cooldown-blue">Cooldown: 8</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> <span className="cooldown-blue">Mana Cost: 75 / 85 / 95 / 105</span></p>
-      </div>
-    </div>
+              {/* Ability 1 */}
+              <div className="ability">
+                <img
+                  src={images["Brutus1.png"]}
+                  alt="Ability 1"
+                  className="ability-icon"
+                />
+                <div className="ability-text">
+                  <h3 className="ability-name">Rolling Boulder</h3>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Hurls a massive
+                    boulder that rolls forward, damaging all enemies in its
+                    path.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Damage:{" "}
+                    <span className="rank-gold">75 / 150 / 225 / 300</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Cooldown: 8</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">
+                      Mana Cost: 75 / 85 / 95 / 105
+                    </span>
+                  </p>
+                </div>
+              </div>
 
-    {/* Ability 2 */}
-    <div className="ability">
-      <img src={images['Brutus2.png']} alt="Ability 2" className="ability-icon" />
-      <div className="ability-text">
-        <h3 className="ability-name">Resilience</h3>
-        <p className="ability-description">
-          <span className="bullet-point">•</span> Hardened by countless arena battles, Brutus takes reduced incoming damage.
-        </p>
-        <p className="ability-description"><span className="bullet-point">•</span> Damage Reduction: <span className="rank-gold">4% / 8% / 12% / 16%</span></p>
-      </div>
-    </div>
+              {/* Ability 2 */}
+              <div className="ability">
+                <img
+                  src={images["Brutus2.png"]}
+                  alt="Ability 2"
+                  className="ability-icon"
+                />
+                <div className="ability-text">
+                  <h3 className="ability-name">Resilience</h3>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Hardened by
+                    countless arena battles, Brutus takes reduced incoming
+                    damage.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Damage Reduction:{" "}
+                    <span className="rank-gold">4% / 8% / 12% / 16%</span>
+                  </p>
+                </div>
+              </div>
 
-    {/* Ability 3 */}
-    <div className="ability">
-      <img src={images['Brutus3.png']} alt="Ability 3" className="ability-icon" />
-      <div className="ability-text">
-        <h3 className="ability-name">Furious Blow</h3>
-        <p className="ability-description">
-          <span className="bullet-point">•</span> Brutus' attacks have a chance to deal bonus damage and stun the enemy for 1 second.
-        </p>
-        <p className="ability-description"><span className="bullet-point">•</span> Chance: <span className="rank-gold">10% / 15% / 20% / 25%</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> Bonus Damage: <span className="rank-gold">40 / 50 / 60 / 70</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> Stun Duration: <span className="rank-gold">1 second</span></p>
-      </div>
-    </div>
-  </div>
+              {/* Ability 3 */}
+              <div className="ability">
+                <img
+                  src={images["Brutus3.png"]}
+                  alt="Ability 3"
+                  className="ability-icon"
+                />
+                <div className="ability-text">
+                  <h3 className="ability-name">Furious Blow</h3>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Brutus' attacks have
+                    a chance to deal bonus damage and stun the enemy for 1
+                    second.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Chance:{" "}
+                    <span className="rank-gold">10% / 15% / 20% / 25%</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Bonus Damage:{" "}
+                    <span className="rank-gold">40 / 50 / 60 / 70</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Stun Duration:{" "}
+                    <span className="rank-gold">1 second</span>
+                  </p>
+                </div>
+              </div>
+            </div>
 
-  {/* Ultimate */}
-  <div className="ultimate-container">
-    <h2 className="ultimate-ability-name">ULTIMATE</h2>
-    <div className="left-column">
-      <img src={images['BrutusUlti.png']} alt="Ultimate Ability" className="ultimate-icon" />
-      <div className="text-container">
-        <h3 className="ultimate-name">Ensnare</h3>
-      </div>
-    </div>
-    <div className="right-column">
-      <div className="ultimate-background-color-mix">
-        <p className="ability-description">
-          <span className="bullet-point">•</span> Throws a massive net, binding the target to the ground and preventing escape.
-        </p>
-        <p className="ability-description"><span className="bullet-point">•</span> Duration: <span className="rank-gold">4 / 5 / 6 seconds</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> <span className="cooldown-blue">Cooldown: 40 / 35 / 30</span></p>
-        <p className="ability-description"><span className="bullet-point">•</span> <span className="cooldown-blue">Mana Cost: 50</span></p>
-      </div>
-    </div>
-  </div>
-</div>
+            {/* Ultimate */}
+            <div className="ultimate-container">
+              <h2 className="ultimate-ability-name">ULTIMATE</h2>
+              <div className="left-column">
+                <img
+                  src={images["BrutusUlti.png"]}
+                  alt="Ultimate Ability"
+                  className="ultimate-icon"
+                />
+                <div className="text-container">
+                  <h3 className="ultimate-name">Ensnare</h3>
+                </div>
+              </div>
+              <div className="right-column">
+                <div className="ultimate-background-color-mix">
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Throws a massive
+                    net, binding the target to the ground and preventing escape.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Duration:{" "}
+                    <span className="rank-gold">4 / 5 / 6 seconds</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">
+                      Cooldown: 40 / 35 / 30
+                    </span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Mana Cost: 50</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="dota-hero-container">
+            <div className="hero-header">
+              <img
+                src={images["ThrallModel.png"]}
+                alt="Thrall"
+                className="hero-image"
+              />
+              <div className="hero-text">
+                <h1 className="hero-name">THRALL – WARCHIEF</h1>
+                <p className="hero-description">
+                  A mighty shaman and leader of his people, Thrall commands the
+                  elements to both empower his allies and devastate his enemies.
+                  With crackling lightning, blood rituals, and the legendary
+                  hammer of his father, he strikes with divine fury while
+                  summoning totems to lead his warriors into battle.
+                </p>
+              </div>
+            </div>
 
+            <div className="hero-abilities">
+              <h2 className="hero-ability-name">ABILITIES</h2>
 
+              {/* Ability 1 */}
+              <div className="ability">
+                <img
+                  src={images["Thrall1.png"]}
+                  alt="Ability 1"
+                  className="ability-icon"
+                />
+                <div className="ability-text">
+                  <h3 className="ability-name">Lightning Shock</h3>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Strikes a target
+                    with lightning, shocking nearby enemies and slowing their
+                    movement by 30%.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Target Damage:{" "}
+                    <span className="rank-gold">50 / 100 / 125 / 175</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Shock Damage:{" "}
+                    <span className="rank-gold">50 / 75 / 125 / 150</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Slow:{" "}
+                    <span className="rank-gold">30%</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">
+                      Cooldown: 11 / 13 / 15 / 17
+                    </span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">
+                      Mana Cost: 100 / 120 / 140 / 160
+                    </span>
+                  </p>
+                </div>
+              </div>
 
+              {/* Ability 2 */}
+              <div className="ability">
+                <img
+                  src={images["Thrall2.png"]}
+                  alt="Ability 2"
+                  className="ability-icon"
+                />
+                <div className="ability-text">
+                  <h3 className="ability-name">Blood Oath</h3>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Thrall blesses
+                    nearby allies with a Blood Oath, granting bonus damage for
+                    20 seconds.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Bonus Damage:{" "}
+                    <span className="rank-gold">7% / 14% / 21% / 24%</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Duration:{" "}
+                    <span className="rank-gold">20 seconds</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Cooldown: 14</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Mana Cost: 50</span>
+                  </p>
+                </div>
+              </div>
 
+              {/* Ability 3 */}
+              <div className="ability">
+                <img
+                  src={images["Thrall3.png"]}
+                  alt="Ability 3"
+                  className="ability-icon"
+                />
+                <div className="ability-text">
+                  <h3 className="ability-name">Orgrim's Hammer</h3>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Thrall wields his
+                    father’s legendary hammer. Each attack has a 20% chance to
+                    unleash thunder, damaging and slowing nearby enemies.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Damage:{" "}
+                    <span className="rank-gold">40 / 60 / 80 / 100</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Slow:{" "}
+                    <span className="rank-gold">5% / 10% / 15% / 20%</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Proc Chance:{" "}
+                    <span className="rank-gold">20%</span>
+                  </p>
+                </div>
+              </div>
+            </div>
 
+            {/* Ultimate */}
+            <div className="ultimate-container">
+              <h2 className="ultimate-ability-name">ULTIMATE</h2>
+              <div className="left-column">
+                <img
+                  src={images["ThrallUlti.png"]}
+                  alt="Ultimate Ability"
+                  className="ultimate-icon"
+                />
+                <div className="text-container">
+                  <h3 className="ultimate-name">Windfury Totem</h3>
+                </div>
+              </div>
+              <div className="right-column">
+                <div className="ultimate-background-color-mix">
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Summons a Windfury
+                    Totem that increases the attack speed of allied heroes in a
+                    large area for 10 seconds.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Attack Speed Bonus:{" "}
+                    <span className="rank-gold">60% / 80% / 100%</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Duration:{" "}
+                    <span className="rank-gold">10 seconds</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Cooldown: 40</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Mana Cost: 100</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="dota-hero-container">
+            <div className="hero-header">
+              <img
+                src={images["MaievModel.png"]}
+                alt="Maiev"
+                className="hero-image"
+              />
+              <div className="hero-text">
+                <h1 className="hero-name">MAIEV – WARDEN</h1>
+                <p className="hero-description">
+                  A relentless huntress of the night, Maiev strikes with
+                  precision and unmatched agility. Her glaive tears through
+                  enemies, her evasive mastery makes her untouchable, and her
+                  vengeance unleashes deadly counterattacks. When challenged,
+                  she forces foes to face her directly, clad in unbreakable
+                  resolve.
+                </p>
+              </div>
+            </div>
 
+            <div className="hero-abilities">
+              <h2 className="hero-ability-name">ABILITIES</h2>
 
+              {/* Ability 1 */}
+              <div className="ability">
+                <img
+                  src={images["Maiev1.png"]}
+                  alt="Ability 1"
+                  className="ability-icon"
+                />
+                <div className="ability-text">
+                  <h3 className="ability-name">Glaive Throw</h3>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Maiev throws her
+                    glaive forward, damaging enemies in its path. The glaive
+                    then returns to her, striking enemies again on its way back.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Damage:{" "}
+                    <span className="rank-gold">50 / 100 / 150 / 200</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Cooldown: 13</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">
+                      Mana Cost: 90 / 100 / 110 / 120
+                    </span>
+                  </p>
+                </div>
+              </div>
 
+              {/* Ability 2 */}
+              <div className="ability">
+                <img
+                  src={images["Maiev2.png"]}
+                  alt="Ability 2"
+                  className="ability-icon"
+                />
+                <div className="ability-text">
+                  <h3 className="ability-name">Evasion</h3>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Focuses on agility
+                    and instinct, granting Maiev 100% evasion for a short
+                    duration.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Duration:{" "}
+                    <span className="rank-gold">2 / 4 / 6 / 8 seconds</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Cooldown: 19</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Mana Cost: 80</span>
+                  </p>
+                </div>
+              </div>
 
+              {/* Ability 3 */}
+              <div className="ability">
+                <img
+                  src={images["Maiev3.png"]}
+                  alt="Ability 3"
+                  className="ability-icon"
+                />
+                <div className="ability-text">
+                  <h3 className="ability-name">Vengeance</h3>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Whenever Maiev is
+                    attacked, she has a 20% chance to unleash a flurry of
+                    knives, damaging all nearby enemies in a 300 AoE.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Damage:{" "}
+                    <span className="rank-gold">30 / 60 / 90 / 120</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Proc Chance:{" "}
+                    <span className="rank-gold">20%</span>
+                  </p>
+                </div>
+              </div>
+            </div>
 
+            {/* Ultimate */}
+            <div className="ultimate-container">
+              <h2 className="ultimate-ability-name">ULTIMATE</h2>
+              <div className="left-column">
+                <img
+                  src={images["MaievUlti.png"]}
+                  alt="Ultimate Ability"
+                  className="ultimate-icon"
+                />
+                <div className="text-container">
+                  <h3 className="ultimate-name">Challenge</h3>
+                </div>
+              </div>
+              <div className="right-column">
+                <div className="ultimate-background-color-mix">
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Maiev challenges all
+                    enemies in a wide area, forcing them to attack her for 3
+                    seconds while she gains bonus armor.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Bonus Armor:{" "}
+                    <span className="rank-gold">10 / 20 / 30</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Duration:{" "}
+                    <span className="rank-gold">3 seconds (taunt)</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">
+                      Cooldown: 35 / 30 / 25
+                    </span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Mana Cost: 140</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="dota-hero-container">
+            <div className="hero-header">
+              <img
+                src={images["MaulfistModel.png"]}
+                alt="Maulfist"
+                className="hero-image"
+              />
+              <div className="hero-text">
+                <h1 className="hero-name">MAULFIST – JUGGERNAUT</h1>
+                <p className="hero-description">
+                  A towering brute of unstoppable might, Maulfist relies on raw
+                  strength and unyielding resilience to crush his enemies. With
+                  his shield bash to stun, his terrifying shout to weaken foes,
+                  his juggernaut endurance to shrug off blows, and his ability
+                  to reflect hostile magic, Maulfist dominates the battlefield
+                  with sheer indomitable power.
+                </p>
+              </div>
+            </div>
 
+            <div className="hero-abilities">
+              <h2 className="hero-ability-name">ABILITIES</h2>
 
+              {/* Ability 1 */}
+              <div className="ability">
+                <img
+                  src={images["Maulfist1.png"]}
+                  alt="Ability 1"
+                  className="ability-icon"
+                />
+                <div className="ability-text">
+                  <h3 className="ability-name">Shield Bash</h3>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Maulfist smashes the
+                    enemy with his shield, dealing damage and stunning the
+                    target.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Damage:{" "}
+                    <span className="rank-gold">25 / 50 / 75 / 100</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Stun Duration:{" "}
+                    <span className="rank-gold">
+                      2.5 / 2.75 / 3 / 3.25 seconds
+                    </span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Cooldown: 13</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Mana Cost: 100</span>
+                  </p>
+                </div>
+              </div>
 
+              {/* Ability 2 */}
+              <div className="ability">
+                <img
+                  src={images["Maulfist2.png"]}
+                  alt="Ability 2"
+                  className="ability-icon"
+                />
+                <div className="ability-text">
+                  <h3 className="ability-name">Demoralizing Shout</h3>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Maulfist unleashes a
+                    terrifying roar, reducing the attack damage of enemies in a
+                    wide area for 12 seconds.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Damage Reduction:{" "}
+                    <span className="rank-gold">10% / 15% / 20% / 25%</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Duration:{" "}
+                    <span className="rank-gold">12 seconds</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Cooldown: 25</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Mana Cost: 60</span>
+                  </p>
+                </div>
+              </div>
 
+              {/* Ability 3 */}
+              <div className="ability">
+                <img
+                  src={images["Maulfist3.png"]}
+                  alt="Ability 3"
+                  className="ability-icon"
+                />
+                <div className="ability-text">
+                  <h3 className="ability-name">The Juggernaut</h3>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Maulfist hardens his
+                    body, reducing incoming damage from each attack.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Damage Reduction:{" "}
+                    <span className="rank-gold">
+                      8 / 16 / 24 / 32 less damage
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
 
+            {/* Ultimate */}
+            <div className="ultimate-container">
+              <h2 className="ultimate-ability-name">ULTIMATE</h2>
+              <div className="left-column">
+                <img
+                  src={images["MaulfistUlti.png"]}
+                  alt="Ultimate Ability"
+                  className="ultimate-icon"
+                />
+                <div className="text-container">
+                  <h3 className="ultimate-name">Spell Reflection</h3>
+                </div>
+              </div>
+              <div className="right-column">
+                <div className="ultimate-background-color-mix">
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> When targeted by a
+                    direct spell, Maulfist reflects magical damage back to all
+                    nearby enemies.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> AoE Damage:{" "}
+                    <span className="rank-gold">150 / 225 / 300</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> AoE Radius:{" "}
+                    <span className="rank-gold">450</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="dota-hero-container">
+            <div className="hero-header">
+              <img
+                src={images["PatchwerkModel.png"]}
+                alt="Patchwerk"
+                className="hero-image"
+              />
+              <div className="hero-text">
+                <h1 className="hero-name">PATCHWERK – ABOMINATION</h1>
+                <p className="hero-description">
+                  A grotesque creation of stitched flesh and disease, Patchwerk
+                  spreads corruption on the battlefield. With his noxious
+                  expulsion to silence casters, his horrifying appearance to
+                  terrify attackers, his disease cloud to rot enemies alive, and
+                  his chains that bind foes in place, Patchwerk is an
+                  unrelenting nightmare of pestilence and control.
+                </p>
+              </div>
+            </div>
 
+            <div className="hero-abilities">
+              <h2 className="hero-ability-name">ABILITIES</h2>
 
+              {/* Ability 1 */}
+              <div className="ability">
+                <img
+                  src={images["Patchwerk1.png"]}
+                  alt="Ability 1"
+                  className="ability-icon"
+                />
+                <div className="ability-text">
+                  <h3 className="ability-name">Disease Expulsion</h3>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Patchwerk belches
+                    out a cloud of disease, dealing damage and silencing nearby
+                    enemy spellcasters.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Damage:{" "}
+                    <span className="rank-gold">60 / 120 / 180 / 240</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Silence Duration:{" "}
+                    <span className="rank-gold">0.5 / 1 / 2 / 3 seconds</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Cooldown: 20</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">
+                      Mana Cost: 100 / 115 / 130 / 145
+                    </span>
+                  </p>
+                </div>
+              </div>
+
+              {/* Ability 2 */}
+              <div className="ability">
+                <img
+                  src={images["Patchwerk2.png"]}
+                  alt="Ability 2"
+                  className="ability-icon"
+                />
+                <div className="ability-text">
+                  <h3 className="ability-name">Horrifying Appearance</h3>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Patchwerk’s dreadful
+                    visage instills terror in attackers, disabling them briefly.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Fear Chance:{" "}
+                    <span className="rank-gold">7% / 14% / 21% / 28%</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Fear Duration:{" "}
+                    <span className="rank-gold">1.2 seconds</span>
+                  </p>
+                </div>
+              </div>
+
+              {/* Ability 3 */}
+              <div className="ability">
+                <img
+                  src={images["Patchwerk3.png"]}
+                  alt="Ability 3"
+                  className="ability-icon"
+                />
+                <div className="ability-text">
+                  <h3 className="ability-name">Disease Cloud</h3>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Spreads a toxic
+                    cloud that infects nearby enemies, dealing damage over time
+                    for 8 seconds.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Damage per Second:{" "}
+                    <span className="rank-gold">5 / 10 / 15 / 20</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Duration:{" "}
+                    <span className="rank-gold">8 seconds</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Ultimate */}
+            <div className="ultimate-container">
+              <h2 className="ultimate-ability-name">ULTIMATE</h2>
+              <div className="left-column">
+                <img
+                  src={images["PatchwerkUlti.png"]}
+                  alt="Ultimate Ability"
+                  className="ultimate-icon"
+                />
+                <div className="text-container">
+                  <h3 className="ultimate-name">Constricting Chains</h3>
+                </div>
+              </div>
+              <div className="right-column">
+                <div className="ultimate-background-color-mix">
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Binds the target
+                    with massive chains, immobilizing and disarming it while
+                    inflicting constant damage.
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Damage:{" "}
+                    <span className="rank-gold">80 per second</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span> Duration:{" "}
+                    <span className="rank-gold">3 / 4 / 5 seconds</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">Cooldown: 60</span>
+                  </p>
+                  <p className="ability-description">
+                    <span className="bullet-point">•</span>{" "}
+                    <span className="cooldown-blue">
+                      Mana Cost: 100 / 150 / 200
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+         
         </div>
       </div>
     </div>

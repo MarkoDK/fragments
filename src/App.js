@@ -16,6 +16,8 @@ import FinalBattleBlog from "./components/scrollOfDeconstruction/blogs/finalBatt
 import RNGinGameDesign from "./components/scrollOfDeconstruction/articles/RNG-game-design/RNGinGameDesign.component";
 import SeasonControlByMultipliers from "./components/scrollOfDeconstruction/articles/SeasonControlByMultipliers/SeasonControlByMultipliers.component";
 import LiveOps from "./components/scrollOfDeconstruction/articles/LiveOps/LiveOps.component";
+import LayersOfMonetization from "./components/scrollOfDeconstruction/articles/LayersOfMonetization/LayersOfMonetization.component";
+import SocialFeatures from "./components/scrollOfDeconstruction/articles/SocialFeatures/SocialFeatures.component";
 
 
 const theme = createTheme({
@@ -56,6 +58,8 @@ const App = () => {
           <Route path="/RNGinGameDesign" element={<RNGinGameDesign />} />
           <Route path="/SeasonControlByMultipliers" element={<SeasonControlByMultipliers />} />
           <Route path="/LiveOps" element={<LiveOps />} />
+          <Route path="/LayersOfMonetization" element={<LayersOfMonetization />} />
+           <Route path="/SocialFeatures" element={<SocialFeatures />} />
         </Routes>
       </Router>
     </ThemeProvider>

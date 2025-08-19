@@ -25,7 +25,7 @@ const RNGinGameDesign = () => {
                         RNG is tricky to control because too little of it often goes unnoticed by players, while too much can make them feel powerless, removing their sense of control over winning. This lack of control is one of the most frustrating experiences in gaming and is exactly the reason why it is important to find the right balance to maintain both challenge and player satisfaction.
                     </p>
                     <p className="mb0">
-                        A simple example of minimal RNG is looting an item that deals either 10 or 11 damage—barely noticeable to players. On the flip side, excessive RNG might mean looting vastly different items where each has a massive power difference, resulting in some options making the level significantly easier.
+                        A simple example of minimal RNG is looting an item that deals either 10 or 11 damage, barely noticeable to players. On the flip side, excessive RNG might mean looting vastly different items where each has a massive power difference, resulting in some options making the level significantly easier.
                     </p>
                     <p className="mb0">
                         The key is finding balance: items should be similar in power but vary in how they influence gameplay. For instance, looting a sword instead of a gun encourages melee combat over ranged, adding strategic variety and increasing the value of replayability.
@@ -55,14 +55,14 @@ const RNGinGameDesign = () => {
 These Locations are the RNG factor that can either enhance the power of a card or completely destroy it. The vast number of unique Locations, combined with countless interactions with specific cards, makes for a very fun and dynamic gameplay loop.
 </p>
 <p className="mb0">
-As a side note, this is my favorite card game design system, and I’ve spent many hours grinding in Marvel Snap, even reaching the MAX Rank—Infinite.
+As a side note, this is my favorite card game design system, and I’ve spent many hours grinding in Marvel Snap, even reaching the MAX Rank - Infinite.
 </p>
 <h4 className="mb0" style={{ color: "#fff" }}>Squad Busters</h4>
 <p className='mb0'>
 Supercell's newest game, Squad Busters, uses excellent examples of RNG implementation to ensure matches feel consistently fresh and dynamic.
 </p>
 <p className='mb0'>
-Instead of allowing players to pick the heroes they want to use in a match, the game randomly selects 18 possible options from the entire hero roster. This includes heroes the player hasn’t unlocked yet—though these cannot be used, they still take up a slot. While this system of randomized hero selection was initially controversial, it integrates seamlessly with other aspects of the game, contributing significantly to its replayability and diversity.
+Instead of allowing players to pick the heroes they want to use in a match, the game randomly selects 18 possible options from the entire hero roster. This includes heroes the player hasn’t unlocked yet, though these cannot be used, they still take up a slot. While this system of randomized hero selection was initially controversial, it integrates seamlessly with other aspects of the game, contributing significantly to its replayability and diversity.
 </p>
 <p className='mb0'>
 Once in a match, another layer of RNG comes into play. As players explore the map and open chests containing heroes, they’re not given access to the full pool of 18 heroes selected earlier. Instead, they are presented with a choice of three heroes from that pool and must pick one. This mechanic encourages players to experiment with different playstyles, as they can only partially strategize based on the RNG. To win, players must adapt to the heroes they acquire throughout the match.
