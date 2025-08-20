@@ -18,6 +18,8 @@ import SeasonControlByMultipliers from "./components/scrollOfDeconstruction/arti
 import LiveOps from "./components/scrollOfDeconstruction/articles/LiveOps/LiveOps.component";
 import LayersOfMonetization from "./components/scrollOfDeconstruction/articles/LayersOfMonetization/LayersOfMonetization.component";
 import SocialFeatures from "./components/scrollOfDeconstruction/articles/SocialFeatures/SocialFeatures.component";
+import RoyalMatch from "./components/scrollOfDeconstruction/articles/RoyalMatchLiveOps/RoyalMatchLiveOps.component";
+import MarvelRivals from "./components/scrollOfDeconstruction/articles/MarvelRivals/MarvelRivals.component";
 
 
 const theme = createTheme({
@@ -59,7 +61,9 @@ const App = () => {
           <Route path="/SeasonControlByMultipliers" element={<SeasonControlByMultipliers />} />
           <Route path="/LiveOps" element={<LiveOps />} />
           <Route path="/LayersOfMonetization" element={<LayersOfMonetization />} />
-           <Route path="/SocialFeatures" element={<SocialFeatures />} />
+          <Route path="/SocialFeatures" element={<SocialFeatures />} />
+          <Route path="/RoyalMatch" element={<RoyalMatch />} />
+          <Route path="/MarvelRivals" element={<MarvelRivals />} />
         </Routes>
       </Router>
     </ThemeProvider>

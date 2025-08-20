@@ -25,40 +25,40 @@ const VideoGame = () => {
             maxHeight: "90%",
           }}
         >
-          <div
-            style={{
-              boxShadow: "0 0 20px 0 rgba(48, 50, 55, 0.8",
-              backgroundColor: "#303237",
-              border: "2px solid black",
-              display: "flex",
-              borderRadius: "10px",
-              justifyContent: "center",
-              backgroundColor: "#23252b",
-              marginBottom: "5px",
-              marginTop: "30px !important",
-              height: "50px",
-            }}
-          >
-            <h4
-              style={{
-                color: "#f1b400",
-                alignItems: "center",
-                display: "flex",
-              }}
-            >
-              The gameplay footage uses Youtube as source{" "}
-              (<a
-                href="https://www.youtube.com/watch?v=j5wuqTrRqVU"
-                className="yt-link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                https://youtu.be/j5wuqTrRqVU
-              </a>)
-              , so make sure to increase Quality, Fullscreen it & increase speed
-              if you wish! Thanks for watching & enjoy!
-            </h4>
-          </div>
+        <div
+  style={{
+    boxShadow: "0 0 20px 0 rgba(48, 50, 55, 0.8)",
+    backgroundColor: "#23252b",
+    border: "2px solid black",
+    display: "flex",
+    borderRadius: "10px",
+    justifyContent: "center",
+    padding: "10px 15px",
+    marginBottom: "5px",
+    marginTop: "30px",
+    maxWidth: "100%",
+  }}
+>
+  <h4
+    style={{
+      color: "#f1b400",
+      display: "flex",
+      alignItems: "center",
+      flexWrap: "wrap",
+      fontSize: "0.95rem",
+      lineHeight: "1.4rem",
+      textAlign: "center",
+      margin: 0,
+    }}
+  >
+    If you want to just check out the Main Story Fragments and skip the
+    showcase of Dialogs / Mechanics / Puzzles / Progression, the timestamps are:
+    @3:24 & @5:24, @11:44, @15:54, @20:21, and from @22:00/22:37 till the very end.
+
+    Thank you!
+  </h4>
+</div>
+
           <iframe
             width="100%"
             height="750px"

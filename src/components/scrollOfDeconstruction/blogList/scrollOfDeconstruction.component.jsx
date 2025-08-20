@@ -15,6 +15,8 @@ import LiveOps from "./LiveOps.png";
 import DotaCover from "./DotaCover.png";
 import MonetizationDesire from "./MonetizationDesire.png";
 import SocialFeatures from "./SOcialFeatures.png"
+import RoyalMatchPng from "./RoyalMatch.jpg"
+import MarvelRivals from "./MarvelRivals.png"
 
 // 🎨 Styled components (MUI v5 way)
 const Root = styled("div")(({ theme }) => ({
@@ -131,8 +133,16 @@ const posts = [
     path: "/NordeusChallenge",
     image: nordeusChallenge,
   },
-  {
+   {
     id: 5,
+    title: "Agressive Perfection of Royal Match's LiveOps",
+    content:
+      "My research and writedown of Royal Match's LiveOps, which I consider one of the best in the industry.",
+    path: "/RoyalMatch",
+    image: RoyalMatchPng,
+  },
+  {
+    id: 6,
     title: "Controlling RNG in Video Games",
     content:
       "RNG in video games is a very important and complex subject. In this article, I tend to cover basics of RNG & how certain games used very smart systems to implement it.",
@@ -141,7 +151,7 @@ const posts = [
   },
 
   {
-    id: 6,
+    id: 7,
     title:
       "How to Engage Players with Low Amount of Real Time to Play Your Game and Have Fun",
     content:
@@ -150,7 +160,7 @@ const posts = [
     image: BoostersImg,
   },
   {
-    id: 7,
+    id: 8,
     title: "Popular Live Ops Systems That Keep Games Alive and Players Engaged",
     content:
       "Live Ops systems drive long-term engagement through offers, seasonal updates, events, and social features. These mechanics not only keep gameplay fresh and exciting but also create powerful opportunities for monetization and community growth.",
@@ -159,7 +169,7 @@ const posts = [
   },
 
   {
-    id: 8,
+    id: 9,
     title:
       "Design Monetization Players Want to Buy: Building Desire, Not Pressure",
     content:
@@ -169,15 +179,23 @@ const posts = [
   },
 
   {
-    id: 9,
+    id: 10,
     title: "Social Features as a Backbone of Video Games",
     content:
       "From guilds and friends lists to raids, tournaments, and leaderboards, social features are the true engine behind long-term engagement in video games. They transform games from solo experiences into communities, giving players reasons to return, compete, and connect every day.",
     path: "/SocialFeatures",
     image: SocialFeatures,
   },
+    {
+    id: 11,
+    title: "Marvel Rivals - Brave F2P Strategy that led to Success",
+    content:
+      "From All Heroes unlocked from the start, to Battle Passes that do not expire, a lot of free skins, Marvel Rivals is a pure standout in modern gaming.",
+    path: "/MarvelRivals",
+    image: MarvelRivals,
+  },
   {
-    id: 10,
+    id: 12,
     title: "Bloodborne – The Evolution of Souls Combat",
     content:
       "- In this article, I will attempt to explain why I believe Bloodborne is FromSoftware's most important title by analyzing game design choices used and how it paved the way for FromSoftware's future games.",
